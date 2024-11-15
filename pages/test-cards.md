@@ -3,7 +3,8 @@ title: 'Test Cards'
 layout: page
 permalink: /cards/
 ---
-* { box-sizing: border-box; }
+<style>
+{ box-sizing: border-box; }
 
 .container { 
   display: flex; 
@@ -20,7 +21,7 @@ permalink: /cards/
   box-shadow: 0 0 4px rgba(0,0,0,0.4);
   flex: 0 0 100%;
 }
-</div>
+</style>
 
 <div class="container">
 <div class="card-wrap">
