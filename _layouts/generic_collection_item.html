@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% comment %}
+  The block below controls the image viewer
+{% endcomment %}
+
+<h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+  <div class='item-view'>
+    <span class='pagination-link' id='prevlink'></span>
+
+    {% if page.manifest.size > 0 %}
+      {% include osd_iiif_image_viewer.html manifest=page.manifest %}
+    {% elsif page.full.size > 0 %}
+      {% include simple_image_viewer.html full_image=page.full %}
+    {% endif %}
+    
+    <span class='pagination-link' id='nextlink'></span>
+  </div>
+  {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
+
+{% comment %}
+  The block below controls the item metadata table
+{% endcomment %}
+
+{% if layout.meta.size %}
+  {% assign metadata = layout.meta %}
+{% elsif page.meta.size %}
+  {% assign metadata = page.meta %}
+{% endif %}
+{% if metadata.size %}
+  {% include item_metadata.html meta=metadata %}
+{% endif %}
