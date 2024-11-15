@@ -1,6 +1,6 @@
 ---
 layout: exhibit
-title: 'Bonaventure's Lyffe of Chryste in Englysshe'
+title: 'Bonaventure Lyffe of Chryste in Englysshe'
 author: Cornell RMC
 publish_date: 2024-11-15
 permalink: /exhibits/a/
