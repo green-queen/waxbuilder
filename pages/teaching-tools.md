@@ -32,7 +32,6 @@ permalink: /teaching-tools/
         <h4><b>Looking at Illuminated Manuscripts: Exploring an Illuminated Manuscript Page | The Getty</b></h4>
         <p>A guide from the J. Paul Getty Museum for 3-12 educators on teaching with illuminated manuscript pages.</p>
       </div>
-    </div>
     <a href="https://www.getty.edu/education/teachers/classroom_resources/curricula/manuscripts/manuscripts_lesson01.html" class='card-link'></a>
   </div>
 </div>
