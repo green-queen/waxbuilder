@@ -549,3 +549,45 @@ search box
   width: 80px;
   height: 80px;
 }
+/*
+    FACETS BUTTONS
+    (Copy the CSS below if you're importing into your own theme)
+*/
+
+input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+.facet-card {
+  border: 0px;
+}
+
+.facet-header {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.facet-bn {
+  text-transform: capitalize;
+}
+
+.active {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+legend {
+  font-size: 1rem;
+  display: inline;
+  margin-bottom: 0;
+}
+
+.facets-chevron-bottom:before {
+  content: "\25BC";
+}
+
+.facets-chevron-top:before {
+  content: "\25B2";
+}
+
+.displayregion {
+  height: 132px;
+}
