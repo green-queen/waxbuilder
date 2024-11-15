@@ -20,9 +20,10 @@ permalink: /teaching-tools/
         <h4><b>Teaching Manuscripts</b></h4>
         <p>A website filled with hands-on strategies for teaching book history, including teaching illumination.</p>
       </div>
-      <a href="https://www.teachingmanuscripts.com" class='card-link'></a>
-    </div>
+     </div>
+    <a href="https://www.teachingmanuscripts.com" class='card-link'></a>
   </div>
+</div>
 
   <div class="column">
     <div class="card">
@@ -31,8 +32,8 @@ permalink: /teaching-tools/
         <h4><b>Looking at Illuminated Manuscripts: Exploring an Illuminated Manuscript Page | The Getty</b></h4>
         <p>A guide from the J. Paul Getty Museum for 3-12 educators on teaching with illuminated manuscript pages.</p>
       </div>
-      <a href="https://www.getty.edu/education/teachers/classroom_resources/curricula/manuscripts/manuscripts_lesson01.html" class='card-link'></a>
     </div>
+    <a href="https://www.getty.edu/education/teachers/classroom_resources/curricula/manuscripts/manuscripts_lesson01.html" class='card-link'></a>
   </div>
 </div>
 
