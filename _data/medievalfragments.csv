@@ -1,4 +1,4 @@
-pid,label,agent,_date,recnum,catalogrecord,collectionnum,worktype,_tags,source,citeas,repository,archcoll,box,folder,format,rights,order,layout,collection,thumbnail,full,bibliography,collectingprogram,materials,description,measurement
+pid,label,agent,_date,recnum,catalogrecord,collectionnum,worktype,_tags,originalwork,citeas,repository,archcoll,box,folder,format,rights,order,layout,collection,thumbnail,full,bibliography,collectingprogram,materials,description,measurement
 obj1,Fragment in Greek from the Gospel of Matthew 21:1-19 describing the entrance of Jesus into Jerusalem (front),Unknown,1100-1300,RMC2019_0182,4916228,6532,"Medieval
 fragments","Bible
 Bible--Manuscripts
