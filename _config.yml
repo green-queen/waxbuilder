@@ -22,7 +22,7 @@ description:      'Minimal Exhibitions with Jekyll'
 url:              'https://kam535.github.io'
 baseurl:          '/miniature-octo-carnival'
 copyright:        'Example copyright org, 2023'
-logo:             '/assets/logo.png'
+logo:             '/assets/manuscript.png'
 default_thumb:    '/assets/default.png'
 
 # ---------------------------------------------------------------
