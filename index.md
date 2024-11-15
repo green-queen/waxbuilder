@@ -2,18 +2,18 @@
 layout: page
 show_title: false
 banner:
-  collection: qatar
+  collection: medievalfragments
   pid: obj10
   y: 25%
   clickable: yes
   height: '500px'
 ---
 
-__Wax__ is a [minimal computing](http://go-dh.github.io/mincomp/) project for producing digital exhibitions focused on longevity, low costs, and flexibility. Our underlying technology is made to learn and to teach, and can produce beautifully rendered, high-quality image collections and scholarly exhibits. To start using Wax, please see our [documentation](https://minicomp.github.io/wiki/#/wax/) for installation instructions and more.
+The Medieval Fragments collections is a collections of fragments, largely loose pages, from medieval manuscripts, held in the Cornell University Library's Rare and Manuscript Collections. This digital exhibit serves as an example of how Wax, an open-source, static exhibit configuration using Jekyll, can display collections of objects in detail.
 
-The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of [WikiMedia](https://commons.wikimedia.org/wiki/Category:Google_Art_Project_works_in_The_Museum_of_Islamic_Art,_Qatar) and [Google Art Project](https://www.google.com/culturalinstitute/about/artproject/)) and The Qatar National Library (via [World Digital Library](https://www.wdl.org/en/)).
+Some of the objects in this collection are part of the [Medieval manuscript fragments archival collection](https://digital.library.cornell.edu/catalog?f%5Barchival_collection_tesim%5D%5B%5D=Medieval+manuscript+fragments&search_field=all_fields) that has been digitized and is publicly available online.
 
 ### Browse the Collection
 
 #### By Item Type
-{% include collection_gallery.html facet_by='object_type' collection='qatar' %}
+{% include collection_gallery.html facet_by='object_type' collection='medievalfragments' %}
