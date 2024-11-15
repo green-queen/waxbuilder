@@ -1,5 +1,5 @@
 ---
-layout: gallery_page
+layout: page
 title: Browse the Collection
 gallery: true
 permalink: /collection/
