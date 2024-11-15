@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Browse the Collection
+gallery: true
 permalink: /collection/
 ---
 
