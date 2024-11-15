@@ -95,6 +95,7 @@ search:
           - folder
           - rights
           - bibliography
+          - originalwork
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
