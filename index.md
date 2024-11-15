@@ -12,7 +12,7 @@ banner:
 The Medieval Fragments collections is a collections of fragments, largely loose pages, from medieval manuscripts, held in the Cornell University Library's Rare and Manuscript Collections. This digital exhibit serves as an example of how Wax, an open-source, static exhibit configuration using Jekyll, can display collections of objects in detail.
 
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswm89Pl4VhxscrJfBzLwjDrCvktVllYreWg&s" alt="Cornell RMC from above" class="center">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswm89Pl4VhxscrJfBzLwjDrCvktVllYreWg&s" class="center" alt="Cornell RMC from above">
 <div style="text-align:center">
 <em>A bird's-eye view of Cornell's RMC</em>
 </div>
