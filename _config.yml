@@ -106,10 +106,12 @@ menu:
         link: '/credits/'
   - label: 'Exhibits'
     sub:
-      - label: 'Inline Parallax Image'
+      - label: 'Bonaventure Lyffe of Chryste'
         link: '/exhibits/a/'
-      - label: 'Inline Image References'
+      - label: 'Parchment fragments'
         link: '/exhibits/b/'
+      - label: 'Sample Exhibit Shell'
+        link: /exhibit/c/
   - label: 'Browse'
     link: '/collection/'
   - label: 'Search'
