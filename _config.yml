@@ -111,7 +111,7 @@ menu:
       - label: 'Parchment fragments'
         link: '/exhibits/b/'
       - label: 'Sample Exhibit Shell'
-        link: /exhibit/c/
+        link: '/exhibit/c/'
   - label: 'Browse'
     link: '/collection/'
   - label: 'Search'
