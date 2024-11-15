@@ -1,0 +1,155 @@
+{% comment %}- ASSIGN SEPARATOR -{% endcomment%}
+{% assign separator = "|" %}
+
+{% comment %}- SET NUMBER OF COLUMNS -{% endcomment%}
+
+{% if include.num_column %} 
+  {% assign min_column_width = 12 | divided_by: include.num_column %} 
+{% else %} 
+  {% assign min_column_width = 6 %} 
+{% endif %}
+
+{% comment %}- SUBSET PARSING -{% endcomment%}
+
+{% if include.field and include.value %}  
+  {% assign collection = site[include.collection] | where: include.field,
+  include.value | sort: 'order' %}
+{% else %}
+  {% assign collection = site[include.collection] %}
+{% endif %}
+
+{% comment %}- END SUBSET PARSING -{% endcomment%}
+
+{% comment %} :::: FACETS :::: {% endcomment%}
+
+{% if include.facet_by %}
+  <form class="row" id="facets">
+    {% assign facet_list = include.facet_by | split: "|" %}
+    {% for facet in facet_list %}
+      {% comment %}- MULTI-VALUE FACETS -{% endcomment%}
+      {% if facet contains "*" %}
+        {% assign facet_name = facet | remove: "*" %}
+
+        {% assign original_options = collection | map: facet_name | compact | uniq | sort_natural %}
+
+        {% comment%}Create Temporary Array of Individuated Facet Values{% endcomment %}
+        {% assign temp_facet_values = "" %}
+        {% for option in original_options %}
+          {% if option contains separator %}
+            {% assign split_values = {{option}} | split: separator %}
+            {% for split_value in split_values %}
+              {% capture temp_facet_values %}{{ temp_facet_values | append: split_value }}|{% endcapture %}
+            {% endfor %}
+          {% else %}
+            {% capture temp_facet_values %}{{ temp_facet_values | append: option}}|{% endcapture %}
+          {% endif %}
+        {% endfor %}
+        {% assign facet_values = temp_facet_values | split: "|" | uniq | sort_natural %}
+      {% else %}
+        {% assign facet_values = collection | map: facet | compact | uniq | sort_natural %}
+        {% assign facet_name = facet %}
+      {% endif %}
+        
+        <fieldset id="{{ facet_name | slugify }}-set" class="card m-1 facet-card">
+          <div class="facet-header card-header">
+            <a
+              class="facet-bn"
+              data-toggle="collapse"
+              href="#{{ facet_name | slugify }}-collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="{{ facet_name | slugify }}-collapse"
+            >
+              <legend>{{ facet_name | replace: "_", " " }}<span
+                  aria-hidden="true"
+                  class="facets-chevron facets-chevron-bottom float-right ml-2"
+                ></span>
+              </legend>
+            </a>
+          </div>
+          <div class="collapse" id="{{ facet_name | slugify }}-collapse">
+            {% comment %}Create Card with facet values{% endcomment %}
+            <div class="card-body">
+              {% for value in facet_values %}
+              <div class="facet-item">
+                <input
+                  id="{{value | slugify}}"
+                  class="{{facet | slugify}}"
+                  type="checkbox"
+                  name="{{value}}"
+                  value="{{value}}"
+                />
+                <label for="{{value}}">{{value}}</label>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </fieldset>
+    {% endfor %}  
+  </form>
+{% else %}
+{% endif %}
+
+{% comment %} :::: END FACETS :::: {% endcomment%}
+
+<!-- THE GALLERY -->
+    
+<div class="wax-gallery-container full-width" id="wax-gallery-{{ include.value | slugify }}-container" >
+  <div class="wax-inline-container">
+      <div class="wax-gallery" id="wax-gallery-{{ include.value | slugify }}">
+        <div class="row">            
+        {% for item in collection %}
+          {% if include.facet_by %}
+            {% assign newClasses = '' | split: ' ' %}
+            {% assign facet_list = include.facet_by | remove: "*" | split: separator %}
+            {% for facet in facet_list %}
+              {% assign temp_facet_values = "" %}
+              {% assign item_value = item[facet] | join " " %}
+                {% if item_value contains separator %}
+                  {% assign split_values = {{item_value}} | split: separator %}                 
+                  {% for split_value in split_values %}
+                    {% assign split_slug_value = split_value | slugify %}
+                    {% capture temp_facet_values %}{{ temp_facet_values | append: split_slug_value }}{% unless split_value == split_values.last %}|{% endunless %}{% endcapture %}
+                  {% endfor %}
+                {% else %}
+                  {% assign slug_value = item_value | join " " | slugify %}
+                  {% capture temp_facet_values %}{{ temp_facet_values | append: slug_value }}{% endcapture %}
+                {% endif %}
+                {% assign facetArray = temp_facet_values | replace: separator, " " | split: " " %} 
+                {% assign newClasses = newClasses | concat: facetArray %}           
+            {% endfor %}
+            
+          {% endif %}
+
+          <div class="gallery-item-facets {{  newClasses | join: ' ' }}  col-xl-{{min_column_width}} p-1">
+            <div class="card thumbnail-card">
+              <img
+                class="d-block card-img-top gallery-thumb w-100 mh-100"
+                src="{{ item.thumbnail | relative_url }}"
+                alt="{{ item.label }}"
+              />
+              <div class="card-body">
+                <a href="{{ item.url | relative_url }}"
+                  ><h3 class="card-title">{{ item.label }}</h3></a
+                >
+
+                <!-- CONSTRUCTED CARD TEXT
+        Replace the constructed text below with your own card message -->
+
+                <p class="card-text small">
+                  A {{item.object_type}} from {{item.location}} ({{item._date}}).
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- END GALLERY -->
+    
+
+    
+    
