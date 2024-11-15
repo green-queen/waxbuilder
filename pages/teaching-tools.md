@@ -23,7 +23,6 @@ permalink: /teaching-tools/
      </div>
     <a href="https://www.teachingmanuscripts.com" class='card-link'></a>
   </div>
-</div>
 
   <div class="column">
     <div class="card">
@@ -34,5 +33,6 @@ permalink: /teaching-tools/
       </div>
     <a href="https://www.getty.edu/education/teachers/classroom_resources/curricula/manuscripts/manuscripts_lesson01.html" class='card-link'></a>
   </div>
+</div>
 </div>
 
