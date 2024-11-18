@@ -6,11 +6,11 @@ permalink: /cards/
 <style>
 .card {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s;}
 .card:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
-.container {padding: 2px 16px;}
+.container {padding: 2px 16px; display:flex;flex-direction:row;}
 .card-link {position: absolute; top: 0; bottom: 0; left: 0; width: 50%;}
 .column {float: left; width: 50%;}
 .row {display:flex;flex-direction:row;}
-.row:after {content: ""; display: table; clear: both;}
+.row:after {content: ""; display: table; clear: both;display:flex;flex-direction:row;}
 </style>
 
 <div class="row">
