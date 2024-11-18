@@ -9,7 +9,6 @@ permalink: /cards/
 .container {padding: 2px 16px; display:flex;flex-direction:row;}
 .card-link {position: absolute; top: 0; bottom: 0; left: 0; width: 50%;}
 .column {float: left; width: 50%;}
-.row {display:flex;flex-direction:row;}
 .row:after {content: ""; display: table; clear: both;display:flex;flex-direction:row;}
 </style>
 
