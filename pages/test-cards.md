@@ -38,3 +38,6 @@ permalink: /cards/
     </div>
   </div>
 </div>
+
+
+display:flex;flex-direction:row;
