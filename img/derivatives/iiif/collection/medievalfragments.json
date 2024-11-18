@@ -1,0 +1,26 @@
+---
+layout: none
+---
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/collection/medievalfragments.json",
+  "@type": "sc:Collection",
+  "label": "medievalfragments",
+  "manifests": [
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/obj21/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "obj21"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/obj22/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "obj22"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/obj23/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "obj23"
+    }
+  ]
+}
