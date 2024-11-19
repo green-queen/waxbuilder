@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<div class="container-fluid">
+  <div class="row align-items-center" id="tag-viewport">
+    <div class="col">
+      <div class="owl-carousel" id="tag-carousel">
+        {% assign taglist = '' %}
+        {{ taglist }}
+        {% for event in site.events %}
+          {% assign tags = event.tTags | split:', ' %}
+          {% for tag in tags %}
+            {% assign taglist = taglist | append: tag | append: ', ' %}
+          {% endfor %}
+        {% endfor %}
+        {% assign taglist = taglist | split: ', ' | uniq %}
+        {% for tag in taglist %}
+        <div class="tag p-2 bg-light small rounded d-inline-block">
+          {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
+          <a href="{{ tagURL | relative_url }}" class="text-dark">
+            {{tag}}
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center" id="timeline-viewport">
+    <div class="owl-carousel" id="event-carousel">
+      {% assign sortedEvents = site.events | sort: 'dateStart' %}
+      {% assign groups = sortedEvents | group_by_exp:"item", "item.dateStart | truncate: 3, ''"  %}
+      {% for group in groups %}
+      {% assign decade = group.name  %}
+      {% assign count = 0  %}
+      {% for event in group.items %}
+      <div class="card text-white shadow" data-dateStart="{{ event.dateStart | date: "%Y" }}" data-hash="{{ event.title | url_encode }}">
+        {% if count == 0 %}
+        <h2 class="decade text-dark font-italic">{{decade}}0's</h2>
+        {% endif %}
+        {% if event.image-tile %}
+        {% capture imageURL %}/assets/img/{{ event.image-tile }}{% endcapture %}
+        <img class="card-img" src="{{ imageURL | relative_url }}" alt="{{ event.title }}">
+        {% else %}
+        <svg class="card-img" width="400px" height="400px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Event image">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+        </svg>
+        {% endif %}
+
+        <div class="card-img-overlay d-flex justify-content-center align-items-center rounded">
+          <h1 class="mb-0 text-center event-title">
+            <a href="{{ event.url | relative_url }}" class="text-white">
+              {{ event.title }}
+            </a>
+          </h1>
+          <p class="small event-date position-absolute mb-0">
+            {% assign startYear = event.dateStart | date: "%Y" %}
+            {% assign endYear = event.dateEnd | date: "%Y" %}
+            {% if startYear == endYear %}
+            {{ event.dateStart | date: "%B %e" }} - {{ event.dateEnd | date: "%B %e, %Y" }}
+            {% else %}
+              {{ event.dateStart | date: "%B %e, %Y" }}
+              {% if event.dateEnd %}
+              - {{ event.dateEnd | date: "%B %e, %Y" }}
+              {% endif %}
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      {% assign count = count | plus: 1 %}
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row align-items-center justify-content-center py-3" id="slider-nav-viewport">
+    <div class="col-auto d-none d-md-block">
+      <button type="button" class="btn btn-light" id="previous">Previous</button>
+    </div>
+    <div class="col mx-2 mx-md-0">
+      <div class="w-100" id="range-slider"></div>
+    </div>
+    <div class="col-auto d-none d-md-block">
+      <button type="button" class="btn btn-light" id="next">Next</button>
+    </div>
+  </div>
+
+</div>
