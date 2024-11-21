@@ -5,9 +5,7 @@ layout: none
   {
     "pid": "obj1",
     "label": "Fragment in Greek from the Gospel of Matthew 21:1-19 describing the entrance of Jesus into Jerusalem (front)",
-    "_date": "1100-1300",
     "worktype": "Medieval\nfragments",
-    "_tags": "Bible\nBible--Manuscripts\nBible. New Testament. Greek--Versions",
     "rights": "Presumed to be in the public domain because of creation date.",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj1/thumbnail.jpg",
@@ -17,9 +15,7 @@ layout: none
   {
     "pid": "obj10",
     "label": "Parchment fragment on f. 66v",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj10/thumbnail.jpg",
@@ -30,9 +26,7 @@ layout: none
   {
     "pid": "obj11",
     "label": "Parchment fragment on f. 132",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj11/thumbnail.jpg",
@@ -43,9 +37,7 @@ layout: none
   {
     "pid": "obj12",
     "label": "Parchment fragment on f. 169",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj12/thumbnail.jpg",
@@ -56,9 +48,7 @@ layout: none
   {
     "pid": "obj13",
     "label": "Parchment fragment on f. 58",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj13/thumbnail.jpg",
@@ -69,9 +59,7 @@ layout: none
   {
     "pid": "obj14",
     "label": "Parchment fragment on f. 66",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj14/thumbnail.jpg",
@@ -82,7 +70,6 @@ layout: none
   {
     "pid": "obj15",
     "label": "AM [aman. frag.] [Divina commedia. Purgatorio: Canto XXXI lines 45-145; Canto XXXII lines 1-90] (Manuscript fragment from Dante, Divine Comedy)",
-    "_date": "1350",
     "worktype": "manuscripts (document genre)",
     "rights": "For Educational Use by Cornell Community",
     "collection": "medievalfragments",
@@ -93,9 +80,7 @@ layout: none
   {
     "pid": "obj16",
     "label": "Bonaventure's Lyffe of Chryste in Englysshe p.4",
-    "_date": "1430",
     "worktype": "text\nprints (visual works)",
-    "_tags": "Religion",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj16/thumbnail.jpg",
@@ -106,9 +91,7 @@ layout: none
   {
     "pid": "obj17",
     "label": "Bonaventure's Lyffe of Chryste in Englysshe p.2",
-    "_date": "1430",
     "worktype": "text\nprints (visual works)",
-    "_tags": "Religion",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj17_Detail_of_-Bonaventure'sLyffeChryste-1430/thumbnail.jpg",
@@ -119,9 +102,7 @@ layout: none
   {
     "pid": "obj18",
     "label": "Bonaventure's Lyffe of Chryste in Englysshe p.1",
-    "_date": "1430",
     "worktype": "text\nprints (visual works)",
-    "_tags": "Religion",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj18/thumbnail.jpg",
@@ -132,9 +113,7 @@ layout: none
   {
     "pid": "obj19",
     "label": "Bonaventure's Lyffe of Chryste in Englysshe p.3",
-    "_date": "1430",
     "worktype": "text\nprints (visual works)",
-    "_tags": "Religion",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj19/thumbnail.jpg",
@@ -145,9 +124,7 @@ layout: none
   {
     "pid": "obj2",
     "label": "Fragment in Greek from the Gospel of Matthew 21:1-19 describing the entrance of Jesus into Jerusalem (back)",
-    "_date": "1100-1300",
     "worktype": "Medieval\nfragments",
-    "_tags": "Bible\nBible--Manuscripts\nBible. New Testament. Greek--Versions",
     "rights": "Presumed to be in the public domain because of creation date.",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj2/thumbnail.jpg",
@@ -157,7 +134,6 @@ layout: none
   {
     "pid": "obj20",
     "label": "[Abbreviated version of the Collato.]",
-    "_date": "1450",
     "worktype": "manuscripts (document genre)",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj20/thumbnail.jpg",
@@ -167,7 +143,6 @@ layout: none
   {
     "pid": "obj21",
     "label": "A lorem ipsum document",
-    "_date": "2024",
     "worktype": "text",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/iiif/images/obj21_0/full/250,/0/default.jpg",
@@ -177,7 +152,6 @@ layout: none
   {
     "pid": "obj22",
     "label": "A sample text document",
-    "_date": "2024",
     "worktype": "text",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/iiif/images/obj22_0/full/250,/0/default.jpg",
@@ -187,7 +161,6 @@ layout: none
   {
     "pid": "obj23",
     "label": "A lorem ipsum document",
-    "_date": "2024",
     "worktype": "text",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/iiif/images/obj23_0/full/250,/0/default.jpg",
@@ -197,9 +170,7 @@ layout: none
   {
     "pid": "obj3",
     "label": "Parchment fragment on f. 200v",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj3/thumbnail.jpg",
@@ -210,9 +181,7 @@ layout: none
   {
     "pid": "obj4",
     "label": "Parchment fragment on f. 239v",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj4/thumbnail.jpg",
@@ -223,9 +192,7 @@ layout: none
   {
     "pid": "obj5",
     "label": "Parchment fragment on f. 238v",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj5/thumbnail.jpg",
@@ -236,9 +203,7 @@ layout: none
   {
     "pid": "obj6",
     "label": "Parchment fragment on f. 167",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj6/thumbnail.jpg",
@@ -249,9 +214,7 @@ layout: none
   {
     "pid": "obj7",
     "label": "Parchment fragment on f. 172v",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj7/thumbnail.jpg",
@@ -262,9 +225,7 @@ layout: none
   {
     "pid": "obj8",
     "label": "Parchment fragment on f. 64v",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj8/thumbnail.jpg",
@@ -275,9 +236,7 @@ layout: none
   {
     "pid": "obj9",
     "label": "Parchment fragment on f. 166",
-    "_date": "1323-1350",
     "worktype": "parchment",
-    "_tags": "Catholic Church --Liturgy --Texts --Manuscripts",
     "rights": "For information regarding copyright for this image, send inquiries to rarerepro@cornell.edu",
     "collection": "medievalfragments",
     "thumbnail": "/img/derivatives/simple/obj9/thumbnail.jpg",
