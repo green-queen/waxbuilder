@@ -125,8 +125,8 @@ menu:
     link: '/search/'
   - label: 'Teaching Tools'
     link: '/teaching-tools/'
-  - label: 'Cards'
-    link: '/cards/'
+  - label: 'Timeline'
+    link: '/timeline/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
