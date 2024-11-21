@@ -128,8 +128,8 @@ menu:
     link: '/teaching-tools/'
   - label: 'Timeline'
     link: '/timeline/'
-  - label: 'Tags'
-    -link: '/tags/'
+  - label: 'Map'
+    -link: '/map/'
   
 
 # --------------------------------------------------------------
