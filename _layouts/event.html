@@ -1,0 +1,55 @@
+---
+layout: timelinedefault
+---
+<div class="container mt-5" id="event-view">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="mb-4">
+        {{page.title}}
+        <br>
+        <small class="text-muted">
+          {% assign startYear = page.dateStart | date: "%Y" %}
+          {% assign endYear = page.dateEnd | date: "%Y" %}
+          {% if startYear == endYear %}
+          {{ page.dateStart | date: "%B %e" }} - {{ page.dateEnd | date: "%B %e, %Y" }}
+          {% else %}
+            {{ page.dateStart | date: "%B %e, %Y" }}
+            {% if page.dateEnd %}
+            - {{ page.dateEnd | date: "%B %e, %Y" }}
+            {% endif %}
+          {% endif %}
+        </small>
+      </h1>
+      {% if page.image %}
+      {% capture imageURL %}/assets/img/{{ page.image }}{% endcapture %}
+      <img class="img-fluid mb-4" src="{{ imageURL | relative_url }}" alt="{{ page.title }}">
+      {% endif %}
+      <p>
+        {{page.description | newline_to_br}}
+      </p>
+      {% if page.video %}
+      <div class="embed-responsive embed-responsive-16by9 my-4">
+        <iframe class="embed-responsive-item" src="{{ page.video }}" allowfullscreen></iframe>
+      </div>
+      {% endif %}
+      {% if page.link %}
+      <p>
+        Read more about <a href="{{ page.link }}">{{ page.title}}</a>.
+      </p>
+      {% endif %}
+      <ul class="list-inline">
+        {% assign tags = page.tTags | split: ', ' %}
+        {% for tag in tags %}
+        <li class="list-inline-item small p-2 mb-2 bg-light rounded">
+          {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
+          <a href="{{ tagURL | relative_url }}" class="text-dark">
+            {{tag}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+
+    </div>
+  </div>
+</div>
