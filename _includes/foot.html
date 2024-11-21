@@ -1,0 +1,11 @@
+<!-- Bootstrap bundle JS -->
+<script src="{{ '/assets/lib/bootstrap.bundle.min.js' | relative_url }}"></script>
+<!-- load other js -->
+<script src="{{ '/assets/lib/lazysizes.min.js' | relative_url }}" async></script>
+{% if page.custom-foot or layout.custom-foot %}
+{%- assign page_feet = page.custom-foot | split: ";" -%}
+{%- assign layout_feet = layout.custom-foot | split: ";" -%}
+{%- assign feet = page_feet | concat: layout_feet -%}
+{% for f in feet %}{% include {{ f }} %}
+{% endfor %}
+{%- endif -%}
