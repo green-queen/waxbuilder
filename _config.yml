@@ -84,12 +84,13 @@ search:
         fields: # the metadata fields to index
           - label
           - agent
-          - _date
+          - dateStart
+          - dateEnd
           - recnum
           - catalogrecord
           - collectionnum
           - worktype
-          - _tags
+          - tTags
           - archcoll
           - box
           - folder
