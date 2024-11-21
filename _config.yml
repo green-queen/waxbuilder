@@ -129,7 +129,7 @@ menu:
   - label: 'Timeline'
     link: '/timeline/'
   - label: 'Map'
-    -link: '/map/'
+    link: '/map/'
   
 
 # --------------------------------------------------------------
