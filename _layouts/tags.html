@@ -4,7 +4,7 @@ layout: timelinedefault
 <div class="container mt-5" id="tag-view">
   {% assign taglist = '' %}
   {{ taglist }}
-  {% for item in site.qatar %}
+  {% for item in site.medievalfragments %}
     {% assign tags = item.tTags | split:', ' %}
     {% for tag in tags %}
       {% assign taglist = taglist | append: tag | append: ', ' %}
@@ -15,7 +15,7 @@ layout: timelinedefault
   <div class="tag-frame" id="{{ tag | url_encode }}">
     <h1>{{ tag }}</h1>
     <div class="card-deck pt-3">
-      {% for item in site.qatar %}
+      {% for item in site.medievalfragments %}
         {% assign tagsArray = item.tTags | split:', ' %}
         {% for tagArray in tagsArray %}
           {% if tagArray == tag %}
