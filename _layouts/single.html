@@ -1,0 +1,77 @@
+---
+layout: timelinedefault
+---
+<div class="container-fluid">
+  <div class="row align-items-center" id="single-viewport">
+    <div class="owl-carousel" id="single-carousel">
+      {% assign sortedItems = site.qatar | sort: 'dateStart' %}
+      {% assign groups = sortedItems | group_by_exp:"item", "item.dateStart | truncate: 3, ''"  %}
+      {% for group in groups %}
+      {% assign decade = group.name  %}
+      {% assign count = 0  %}
+      {% for item in group.items %}
+      <div class="card text-white shadow" data-dateStart="{{ item.dateStart }}" data-hash="{{ item.label | url_encode }}">
+        {% if count == 0 %}
+        <h2 class="decade text-dark font-italic">{{decade}}0's</h2>
+        {% endif %}
+        {% if item.full %}
+        {% capture imageURL %}{{ item.full }}{% endcapture %}
+        <img class="card-img" src="{{ imageURL | relative_url }}" alt="{{ item.label }}">
+        {% else %}
+        <svg class="card-img" width="400px" height="400px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Item image">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+        </svg>
+        {% endif %}
+
+        <div class="card-img-overlay d-flex justify-content-end align-items-center rounded" data-dateStart="{{ item.dateStart }}">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+            <h2 class="event-date mb-0">
+              {% assign startYear = item.dateStart %}
+              {% assign endYear = item.dateEnd %}
+              {% if startYear == endYear %}
+              {{ item.dateStart }} - {{ item.dateEnd }}
+              {% else %}
+                {{ item.dateStart }}
+                {% if item.dateEnd %}
+                - {{ item.dateEnd }}
+                {% endif %}
+              {% endif %}
+            </h2>
+            <h1 class="event-title d-none d-md-block">
+              {{ item.label }}
+            </h1>
+            <h1 class="event-title d-md-none">
+              <a class="text-white" href="{{ item.url | relative_url }}">
+                {{ item.label }}
+              </a>
+            </h1>
+            <p class="d-none d-md-block">
+              {{item.description | newline_to_br | truncatewords: 75}}
+            </p>
+            <p class="d-none d-md-block">
+              <a class="text-white" href="{{ item.url | relative_url }}">
+                Continue reading
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% assign count = count | plus: 1 %}
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row align-items-center justify-content-center py-3" id="slider-nav-viewport">
+    <div class="col-auto d-none d-md-block">
+      <button type="button" class="btn btn-light" id="previous">Previous</button>
+    </div>
+    <div class="col">
+      <div class="w-100" id="range-slider"></div>
+    </div>
+    <div class="col-auto d-none d-md-block">
+      <button type="button" class="btn btn-light" id="next">Next</button>
+    </div>
+  </div>
+
+</div>
