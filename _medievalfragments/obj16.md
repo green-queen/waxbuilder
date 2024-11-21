@@ -1,13 +1,13 @@
 ---
 pid: obj16
 label: Bonaventure's Lyffe of Chryste in Englysshe p.4
-_date: '1430'
+dateStart: '1430'
 recnum: RMC2007_0221
 catalogrecord: '3817329'
 worktype: |-
   text
   prints (visual works)
-_tags: Religion
+tTags: Religion
 originalwork: The Mirrour of the Blessed Lyf of Jesu Christi / Nicholas Love
 repository: Division of Rare and Manuscript Collections_Cornell University Library
 format: image/jpeg

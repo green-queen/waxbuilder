@@ -1,7 +1,7 @@
 ---
 pid: obj22
 label: A sample text document
-_date: '2024'
+dateStart: '2024'
 worktype: text
 format: pdf
 order: '21'

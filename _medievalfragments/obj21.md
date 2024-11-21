@@ -1,7 +1,7 @@
 ---
 pid: obj21
 label: A lorem ipsum document
-_date: '2024'
+dateStart: '2024'
 worktype: text
 format: pdf
 order: '20'
