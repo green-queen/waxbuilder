@@ -1,7 +1,17 @@
 <!doctype html>
 <html lang="en" class="h-100">
   <head prefix="og: http://ogp.me/ns#">
-    {% include head.html %}
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- load style sheets -->
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fullscreen.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fusesearch.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.Default.css' | relative_url }}">
+    
+<!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
   </head>
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
