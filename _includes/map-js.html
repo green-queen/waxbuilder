@@ -1,7 +1,3 @@
-{%- if site.data.theme.icons -%}{% assign icons = site.data.theme.icons %}{% else %}
-{% assign cb_icons = site.pages | where: "name","cb-icons.svg" | first %}
-{% assign icons = cb_icons.icons %}{%- endif -%}
-
 {%- assign items = site.medievalfragments | where_exp: 'item','item.pid' -%}
 {%- assign items = items | where_exp: 'item', 'item.pid != nil' | where_exp: 'item','item.latitude' -%}
 {%- assign fields = site.data.config-map -%}
