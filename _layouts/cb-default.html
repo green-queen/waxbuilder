@@ -1,23 +1,12 @@
 <!doctype html>
 <html lang="en" class="h-100">
   <head prefix="og: http://ogp.me/ns#">
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fullscreen.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/leaflet.fusesearch.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/lib/leaflet/MarkerCluster.Default.css' | relative_url }}">
-    
-
+    {% include cb-head.html %}
   </head>
   <body class="d-flex flex-column h-100">
-    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
     <main id="maincontent" role="main" class="flex-shrink-0">
     {{ content }}
     </main>
-    {% include foot.html %}
+    {% include cb-foot.html %}
   </body>
 </html>
