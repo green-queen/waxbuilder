@@ -107,11 +107,7 @@ search:
 
 menu:
   - label: 'About'
-    sub:
-      - label: 'About'
-        link: '/about/'
-      - label: 'Credits'
-        link: '/credits/'
+    link: '/about/'
   - label: 'Exhibits'
     sub:
       - label: 'Bonaventure Lyffe of Chryste'
@@ -142,10 +138,10 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
+      link: 'https://github.com/kam535/miniature-octo-carnival'
     - label: 'Credits'
       link: '/credits'
-    - label: 'Wiki'
+    - label: 'Wax Wiki'
       link: 'https://minicomp.github.io/wiki/wax/'
   logos:
     - img: '/img/book.png'
