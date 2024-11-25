@@ -13,4 +13,4 @@ This site's collection comprises a set of objects, each of which is represented 
 {% include cloud.html fields="location" min=1 %}
 
 ## Subjects
-
+{% include cloud.html fields="tTags;artist" min=1 %}
