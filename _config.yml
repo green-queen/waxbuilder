@@ -21,7 +21,7 @@ title:            'Medieval Fragments at Cornell'
 description:      'Minimal Exhibitions with Jekyll'
 url:              'https://kam535.github.io'
 baseurl:          '/miniature-octo-carnival'
-copyright:        'Example copyright org, 2023'
+copyright:        '© Cornell University Digatl CoLab, 2024'
 logo:             '/img/book.png'
 default_thumb:    '/assets/default.png'
 
