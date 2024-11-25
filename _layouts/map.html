@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <link rel="stylesheet" href="{% if site.data.theme.bootswatch %}https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/{{ site.data.theme.bootswatch }}/bootstrap.min.css{% else %}{{ '/assets/bootstrap.min.css' | relative_url }}{% endif %}" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/leaflet.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/leaflet.fullscreen.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/leaflet.fusesearch.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/MarkerCluster.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/MarkerCluster.Default.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/cb-styles.css' | relative_url }}" type="text/css">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main id="maincontent" role="main" class="flex-shrink-0">
+      <div id="map"></div>
+    </main>
+    {% include map-js.html %}
+  </body>
+</html>
