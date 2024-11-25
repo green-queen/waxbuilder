@@ -18,7 +18,7 @@
 # ~> https://jekyllrb.com/docs/configuration/options/
 
 title:            'Medieval Fragments at Cornell'
-description:      'Minimal Exhibitions with Jekyll'
+description:      'A minimal exhibit built with Wax'
 url:              'https://kam535.github.io'
 baseurl:          '/miniature-octo-carnival'
 copyright:        '© Cornell University Digatl CoLab, 2024'
