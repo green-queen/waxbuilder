@@ -15,8 +15,8 @@ rights: For information regarding copyright for this image, send inquiries to ra
 order: '16'
 layout: medfrag_item
 collection: medievalfragments
-thumbnail: "/img/derivatives/simple/obj17_Detail_of_-Bonaventure'sLyffeChryste-1430/thumbnail.jpg"
-full: "/img/derivatives/simple/obj17_Detail_of_-Bonaventure'sLyffeChryste-1430/fullwidth.jpg"
+thumbnail: "/img/derivatives/simple/obj17/thumbnail.jpg"
+full: "/img/derivatives/simple/obj17/fullwidth.jpg"
 bibliography: p.2
 collectingprogram: Rare Books
 description: Bonaventure's Life of Christ in England
