@@ -131,7 +131,7 @@ menu:
   - label: 'Map'
     link: '/map.html'
   - label: 'Data'
-  - link: '/data/'
+    link: '/data/'
   
 
 # --------------------------------------------------------------
