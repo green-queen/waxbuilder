@@ -118,6 +118,11 @@ menu:
         link: '/exhibit/c/'
   - label: 'Browse'
     link: '/collection/'
+    sub:
+      - label: 'Subjects'
+        link: '/subjects/'
+      - label: 'Locations'
+        link: '/locations/'
   - label: 'Search'
     link: '/search/'
   - label: 'Teaching Tools'
