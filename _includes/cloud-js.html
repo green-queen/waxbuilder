@@ -3,7 +3,7 @@
 {% if site.data.theme.browse-child-objects == true %}
 {%- assign items = site.medievalfragments | where_exp: 'item','item.pid' -%}
 {% else %}
-{%- assign items = site.meduevalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
+{%- assign items = site.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
 
 {% comment %} Capture all cloud terms {% endcomment %} 
