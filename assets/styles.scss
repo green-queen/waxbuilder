@@ -46,6 +46,22 @@ $footer-height:   250px;
 /*
 font & asset import
 */
+@media (min-width: 576px) {
+    .modal-xxl {
+        max-width:90%
+    }
+}
 
+@media (min-width: 992px) {
+    .modal-xxl {
+        max-width:90%
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-xxl {
+        max-width:90%
+    }
+}
 @import url('https://fonts.googleapis.com/css?family=Trirong:300,400,700&font-display=auto');
 @import 'wax';
