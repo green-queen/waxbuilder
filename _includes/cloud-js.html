@@ -1,4 +1,4 @@
-{%- assign cloud-fields = include.fields | split: ";" -%}
+{%- assign cloud-fields = include.fields | split: ", " -%}
 
 {% if site.data.theme.browse-child-objects == true %}
 {%- assign items = site.medievalfragments | where_exp: 'item','item.pid' -%}
