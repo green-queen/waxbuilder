@@ -4,7 +4,7 @@ layout: timelinedefault
 <div class="container-fluid">
   <div class="row align-items-center" id="tag-viewport">
     <div class="col">
-      <div class="owl-carousel" id="tag-carousel">
+      <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         {% assign taglist = '' %}
         {{ taglist }}
         {% for item in site.medievalfragments %}
