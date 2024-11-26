@@ -1,6 +1,9 @@
 ---
 pid: obj8
 label: Parchment fragment on f. 64v
+location: Ithaca, NY
+longitude: "-76.501884"
+latitude: '42.443962'
 dateStart: '1323'
 dateEnd: '1350'
 recnum: RMC2009_0156

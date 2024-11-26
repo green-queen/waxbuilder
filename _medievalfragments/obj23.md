@@ -1,9 +1,11 @@
 ---
 pid: obj23
 label: A lorem ipsum document
+location: Ithaca, NY
+longitude: "-76.501884"
+latitude: '42.443962'
 dateStart: '2024'
 worktype: text
-tTags: 
 format: pdf
 order: '22'
 layout: medfrag_item

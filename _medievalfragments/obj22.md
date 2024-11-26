@@ -1,9 +1,11 @@
 ---
 pid: obj22
 label: A sample text document
+location: Ithaca, NY
+longitude: "-76.501884"
+latitude: '42.443962'
 dateStart: '2024'
 worktype: text
-tTags: 
 format: pdf
 order: '21'
 layout: medfrag_item

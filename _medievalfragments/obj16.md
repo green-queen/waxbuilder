@@ -1,6 +1,9 @@
 ---
 pid: obj16
 label: Bonaventure's Lyffe of Chryste in Englysshe p.4
+location: Ferrara, Italy
+longitude: '11.619787'
+latitude: '44.8392'
 dateStart: '1430'
 recnum: RMC2007_0221
 catalogrecord: '3817329'

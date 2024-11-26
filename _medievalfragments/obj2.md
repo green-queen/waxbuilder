@@ -3,6 +3,9 @@ pid: obj2
 label: Fragment in Greek from the Gospel of Matthew 21:1-19 describing the entrance
   of Jesus into Jerusalem (back)
 agent: Unknown
+location: Ithaca, NY
+longitude: "-76.501884"
+latitude: '42.443962'
 dateStart: '1100'
 dateEnd: '1300'
 recnum: RMC2019_0183
@@ -11,7 +14,7 @@ collectionnum: '6532'
 worktype: |-
   Medieval
   fragments
-tTags: Bible, Bible—Manuscripts, Bible. New Testament. Greek--Versions
+tTags: Bible,Bible—Manuscripts,Bible. New Testament. Greek--Versions
 originalwork: 'Medieval Manuscript Fragments #6532. Division of Rare and Manuscript
   Collections Cornell University Library. n.d.'
 citeas: 'Medieval Manuscript Fragments #6532. Division of Rare and Manuscript Collections

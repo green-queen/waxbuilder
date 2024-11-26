@@ -1,9 +1,11 @@
 ---
 pid: obj21
 label: A lorem ipsum document
+location: Ferrara, Italy
+longitude: '11.619787'
+latitude: '44.8392'
 dateStart: '2024'
 worktype: text
-tTags: 
 format: pdf
 order: '20'
 layout: medfrag_item

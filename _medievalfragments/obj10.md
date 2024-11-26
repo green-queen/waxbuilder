@@ -1,6 +1,9 @@
 ---
 pid: obj10
 label: Parchment fragment on f. 66v
+location: Ferrara, Italy
+longitude: '11.619787'
+latitude: '44.8392'
 dateStart: '1323'
 dateEnd: '1350'
 recnum: RMC2009_0158

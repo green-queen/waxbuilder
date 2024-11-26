@@ -3,10 +3,12 @@ pid: obj15
 label: 'AM [aman. frag.] [Divina commedia. Purgatorio: Canto XXXI lines 45-145; Canto
   XXXII lines 1-90] (Manuscript fragment from Dante, Divine Comedy)'
 agent: Unknown
+location: Ferrara, Italy
+longitude: '11.619787'
+latitude: '44.8392'
 dateStart: '1350'
 recnum: U0250_0049
 worktype: manuscripts (document genre)
-tTags: 
 format: image/jpeg
 rights: For Educational Use by Cornell Community
 order: '14'
