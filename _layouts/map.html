@@ -3,13 +3,20 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <title>
+    {{ site.title }}{% if page.label %} | {{ page.label }}{% elsif page.title %} | {{ page.title }}{% endif %}
+    </title>
     <link rel="stylesheet" href="{{ '/assets/leaflet.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/leaflet.fullscreen.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/leaflet.fusesearch.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/MarkerCluster.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/MarkerCluster.Default.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/cb-styles.css' | relative_url }}" type="text/css">
+    <link rel='canonical' href='{{ page.url | absolute_url }}'/>
+    <link rel='icon' type='image/png' href="{{ 'img/book.png' | absolute_url }}">
+    <link rel='stylesheet' href="{{ '/assets/styles.css' | absolute_url }}"/>
+
+    <script type='text/javascript' src="{{ '/assets/jquery-3.2.1.min.js' | absolute_url }}"></script>
   </head>
   <body class="d-flex flex-column h-100">
       {% include header.html %}
