@@ -11,10 +11,10 @@
 <!-- load leaflet dependencies -->
 <script src="{{ '/assets/leaflet.js' | relative_url }}"></script>
 <script src="{{ '/assets/Leaflet.fullscreen.min.js' | relative_url }}"></script>
-<script src="{{ '/assets/fuse.min.js' | relative_url }}"></script>
+{% if site.data.theme.map-search == true %}<script src="{{ '/assets/fuse.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/leaflet.fusesearch.js' | relative_url }}"></script>{% endif %}
-<script src="{{ '/assets/leaflet.markercluster.js' | relative_url }}"></script>{% endif %}
-<script src="{{ '/assets/leaflet.markercluster.freezable.js' | relative_url }}"></script>{% endif %}
+{% if site.data.theme.map-cluster == true %}<script src="{{ '/assets/leaflet.markercluster.js' | relative_url }}"></script>{% endif %}
+{% if site.data.theme.map-search == true and site.data.theme.map-cluster == true %}<script src="{{ '/assets/leaflet.markercluster.freezable.js' | relative_url }}"></script>{% endif %}
 
 <script>
 (function(){
