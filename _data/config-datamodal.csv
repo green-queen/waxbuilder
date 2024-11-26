@@ -1,9 +1,11 @@
 display_name,stub,dropdown_parent
-Home,/
-Browse,/browse.html
-Subjects,/subjects.html
-Locations,/locations.html
+Browse,/collection/
+Search,/search/
+Teaching Tools,/teaching-tools/
+Timeline,/timeline/
 Map,/map.html
-Timeline,/timeline.html
-Data,/data.html
-About,/about.html
+Data,/data/
+Bonaventure Lyffe of Chryste,/exhibits/a/,Exhibits
+Parchment fragments,/exhibits/b/,Exhibits
+Sample Exhibit Shell,/exhibit/c/,Exhibits
+About,/about/
