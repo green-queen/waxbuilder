@@ -6,17 +6,9 @@
     <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
     {% include header.html %}
     {% include timelineheader.html %}
-    {% if page.banner %}
-      {% assign b = page.banner %}
-      {% include parallax_image.html collection=b.collection pid=b.pid y=b.y height=b.height image=b.image clickable=b.clickable %}
-    {% endif %}
-    <div id='wax-main'>
-      <div id='wax-content' class='wax-inline-container'>
-        <main class="flex-shrink-0 mb-5" id="main">
-          {{ content }}
-        </main>
-       </div>
-    </div>
+    <main class="flex-shrink-0 mb-5" id="main">
+      {{ content }}
+    </main>
     {% include footer.html %}
     <script type='text/javascript' async defer src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
     <script type='text/javascript' async defer src='{{ "/assets/popper.min.js" | absolute_url }}'></script>
