@@ -1,5 +1,5 @@
 ---
-layout: datadefault
+layout: page
 title: Reuse the Collection Data
 permalink: /data/
 collection: medievalfragments
@@ -10,7 +10,5 @@ Wax is inspired by [FAIR data principles](https://journal.code4lib.org/articles/
 To download the collection data as a CSV, click on the 'CSV' button.
 
 {% include interactive_metadata_table.html collection=page.collection %}
-<div class="container my-4">
-    {% include data-download-modal.html %}
-</div>
+{% include data-download-modal.html %}
 
