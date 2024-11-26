@@ -6,6 +6,7 @@ agent: Unknown
 dateStart: '1350'
 recnum: U0250_0049
 worktype: manuscripts (document genre)
+tTags: 
 format: image/jpeg
 rights: For Educational Use by Cornell Community
 order: '14'
