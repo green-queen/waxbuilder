@@ -1,7 +1,6 @@
-<style>
-    
-</style>
-<div class = "c
+<link rel="stylesheet" href="{{ '/assets/timelinestyles.css' | relative_url }}"/>
+
+<div class="container my-4">
 {%- assign stubs = site.data.config-datamodal | map: 'stub' | join: ';' -%}
 <button type="button" class="btn btn-primary btn-lg float-md-end" data-bs-toggle="modal" data-bs-target="#dataModal">Download Data</button>
 <!-- Modal -->
@@ -60,7 +59,7 @@
                         <a href="{{ site.source-code | default: 'https://github.com/kam535/miniature-octo-carnival' }}" class="btn btn-outline-dark" target="_blank">Source Code</a>
                     </div>
                 </div>
-
+                </div>
             </div>
         </div>
     </div>
