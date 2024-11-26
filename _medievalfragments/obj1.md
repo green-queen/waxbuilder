@@ -11,7 +11,7 @@ collectionnum: '6532'
 worktype: |-
   Medieval
   fragments
-tTags: Bible,Bible—Manuscripts,Bible. New Testament. Greek--Versions
+tTags: Bible, Bible—Manuscripts, Bible. New Testament. Greek--Versions
 originalwork: 'Medieval Manuscript Fragments #6532. Division of Rare and Manuscript
   Collections Cornell University Library. n.d.'
 citeas: 'Medieval Manuscript Fragments #6532. Division of Rare and Manuscript Collections
