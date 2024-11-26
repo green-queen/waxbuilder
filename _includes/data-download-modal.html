@@ -31,26 +31,6 @@
                     </div>
                 </div>
                 {%- endif -%}
-                {% if stubs contains "subject" %}
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h2 class="card-title h4">Subject Metadata</h2>
-                        <p class="card-text">Unique values and counts of subject metadata, useful for further analyzing the content of this collection.</p>
-                        <a href="{{ '/assets/subjects.csv' | relative_url }}" class="btn btn-outline-dark" target="_blank">Subjects CSV</a>
-                        <a href="{{ '/assets/subjects.json' | relative_url }}" class="btn btn-outline-dark" target="_blank">Subjects JSON</a>
-                    </div>
-                </div>
-                {% endif %}
-                {% if stubs contains "location" %}
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h2 class="card-title h4">Locations</h2>
-                        <p class="card-text">Unique values and counts of location metadata, useful for further visualization and analysis of this collection's place names.</p>
-                        <a href="{{ '/assets/locations.csv' | relative_url }}" class="btn btn-outline-dark" target="_blank">Locations CSV</a>
-                        <a href="{{ '/assets/locations.json' | relative_url }}" class="btn btn-outline-dark" target="_blank">Locations JSON</a>
-                    </div>
-                </div>
-                {%- endif -%}
                 {% if stubs contains "map" %}
                 <div class="card my-3">
                     <div class="card-body">
