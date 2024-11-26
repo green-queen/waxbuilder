@@ -1,3 +1,0 @@
-metadata-export-fields: "pid,label,agent,dateStart,dateEnd,recnum,catalogrecord,collectionnum,worktype,tTags,originalwork,citeas,repository,archcoll,box,folder,format,rights,order,layout,collection,thumbnail,full,bibliography,collectingprogram,materials,description,measurement,manifest
-"
-metadata-facets-fields: "tTags,agent,worktype"
