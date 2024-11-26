@@ -5,7 +5,7 @@
     corresponding data formats will be available for download.
 {%- endcomment -%}
 
-{%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
+{%- assign stubs = site.data.config-datamodal | map: 'stub' | join: ';' -%}
 <button type="button" class="btn btn-primary btn-lg float-md-end" data-bs-toggle="modal" data-bs-target="#dataModal">Download Data</button>
 <!-- Modal -->
 <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="dataModalLabel" aria-hidden="true">
