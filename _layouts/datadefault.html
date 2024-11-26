@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{ site.title }}{% if page.label %} | {{ page.label }}{% elsif page.title %} | {{ page.title }}{% endif %}
+  </title>
+
+  <link rel='canonical' href='{{ page.url | absolute_url }}'/>
+  <link rel='icon' type='image/png' href="{{ 'img/book.png' | absolute_url }}">
+  <link rel='stylesheet' href="{{ '/assets/styles.css' | absolute_url }}"/>
+
+  <script type='text/javascript' src="{{ '/assets/jquery-3.2.1.min.js' | absolute_url }}"></script>
+  <link rel="stylesheet" href="{{ '/assets/cb-styles.css' | relative_url }}" type="text/css">
+</head>
+ <body>
+   <div id='wax-main'>
+     <div id='wax-content' class='wax-inline-container'>
+      <main id="maincontent" role="main" class="flex-shrink-0">
+          {% include header.html %}
+          <div class="container my-4">
+          {{ content }}
+          </div>
+      </main>
+      </div>
+    </div>
+    {% include footer.html %}
+     <script type='text/javascript' async defer src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
+    <script type='text/javascript' async defer src='{{ "/assets/popper.min.js" | absolute_url }}'></script>
+  </body>
+</html>
+<script type='text/javascript' async defer src='{{ "/assets/facets.js" | absolute_url }}'></script>
+
