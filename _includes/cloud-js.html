@@ -1,4 +1,4 @@
-{%- assign cloud-fields = include.fields | split: ", " -%}
+{%- assign cloud-fields = include.fields | split: ";" -%}
 
 {% if site.data.theme.browse-child-objects == true %}
 {%- assign items = site.medievalfragments | where_exp: 'item','item.pid' -%}
@@ -9,10 +9,10 @@
 {% comment %} Capture all cloud terms {% endcomment %} 
 {%- assign raw-terms = "" -%}
 {%- for c in cloud-fields -%}
-{% assign new = items | map: c | compact | join: ", " %}
-{% assign raw-terms = raw-terms | append: ", " | append: new %}
+{% assign new = items | map: c | compact | join: ";" %}
+{% assign raw-terms = raw-terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign raw-terms = raw-terms | downcase | split: ", " -%}
+{%- assign raw-terms = raw-terms | downcase | split: ";" -%}
 
 {% comment %} Clean up raw terms {% endcomment %} 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
