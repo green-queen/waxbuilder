@@ -13,12 +13,12 @@
     "events": [
       {% for item in items %}{% if item.dateStart %}{
         "media": {
-          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.thumbnail contains 'http' %}{{ item.thumbnail }}{% else %}{{ item.thumbnail | prepend: '/medievalfragments/' | absolute_url }}{% endif %}",
+          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.thumbnail contains 'http' %}{{ item.thumbnail }}{% else %}{{ item.thumbnail | prepend: '/medievalfragments' | absolute_url }}{% endif %}",
           "caption": {{ item.label | jsonify }},
-          "link": "{{ '/item.html' | absolute_url | append: '?id=' | append: item.pid }}",
+          "link": "{{ 'medievalfragments' | absolute_url | append: item.pid }}",
           "credit": "{{ site.title }}"
         },
-        "start_date": { {% if item.dateStart contains '-' %}{% assign dates = item.date | split: '-' %}
+        "start_date": { {% if item.dateStart contains '-' %}{% assign dates = item.dateStart | split: '-' %}
           "month": "{{ dates[1] }}",
           "day": "{{ dates[2] }}",
           "year": "{{ dates[0] }}"{% elsif item.date contains '/' %}"year": "{{ item.date | strip | split: '/' | last }}"{% else %}
