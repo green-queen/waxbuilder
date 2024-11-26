@@ -1,5 +1,5 @@
 
-{%- assign items = site.medievalfragments| where_exp: 'item', 'item.date' -%}
+{%- assign items = site.medievalfragments| where_exp: 'item', 'item.dateStart' -%}
 {
     "title": {
         "media": {
