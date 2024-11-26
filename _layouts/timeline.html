@@ -8,12 +8,12 @@ layout: timelinedefault
         {% assign taglist = '' %}
         {{ taglist }}
         {% for item in site.medievalfragments %}
-          {% assign tags = item.tTags | split:',' %}
+          {% assign tags = item.tTags | split:', ' %}
           {% for tag in tags %}
-            {% assign taglist = taglist | append: tag | append: ',' %}
+            {% assign taglist = taglist | append: tag | append: ', ' %}
           {% endfor %}
         {% endfor %}
-        {% assign taglist = taglist | split: ',' | uniq %}
+        {% assign taglist = taglist | split: ', ' | uniq %}
         {% for tag in taglist %}
         <div class="tag p-2 bg-light small rounded d-inline-block">
           {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
