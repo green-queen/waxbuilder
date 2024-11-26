@@ -12,7 +12,7 @@
 {% assign new = items | map: c | compact | join: ";" %}
 {% assign raw-terms = raw-terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign raw-terms = raw-terms | downcase | split: ";" -%}
+{%- assign raw-terms = raw-terms | downcase | split: ", " -%}
 
 {% comment %} Clean up raw terms {% endcomment %} 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
