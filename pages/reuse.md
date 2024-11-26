@@ -10,3 +10,4 @@ Wax is inspired by [FAIR data principles](https://journal.code4lib.org/articles/
 To download the collection data as a CSV, click on the 'CSV' button.
 
 {% include interactive_metadata_table.html collection=page.collection %}
+{% include data-download-modal.html %}
