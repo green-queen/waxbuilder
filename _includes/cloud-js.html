@@ -30,7 +30,7 @@
     terms = terms.slice(0,-1);
 
     {% if include.stopwords %}/* apply stopwords */
-    var stopWords = {{ include.stopwords | downcase | split: ';' | jsonify }};
+    var stopWords = {{ include.stopwords | downcase | split: ', ' | jsonify }};
     terms = terms.filter(function(a) { return stopWords.indexOf(a[0]) < 0;});{% endif %}
     /* calculate max size */
     var counts = terms.map(function(obj){ return obj[1]; });
