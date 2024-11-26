@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ '/assets/timelinestyles.css' | relative_url }}"/>
 
 <div class="container my-4">
-{%- assign stubs = site.data.config-datamodal.csv | map: 'stub' | join: ';' -%}
+{%- assign stubs = site.data.config-datamodal | map: 'stub' | join: ';' -%}
 <button type="button" class="btn btn-primary btn-lg float-md-end" data-bs-toggle="modal" data-bs-target="#dataModal">Download Data</button>
 <!-- Modal -->
 <div class="modal fade" id="dataModal" tabindex="-1" role="dialog" aria-labelledby="dataModalLabel" aria-hidden="true">
