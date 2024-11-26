@@ -18,7 +18,7 @@ rights: For information regarding copyright for this image, send inquiries to ra
 order: '16'
 layout: medfrag_item
 collection: medievalfragments
-thumbnail: "/img/derivatives/simple/thumbnail/obj17.jpg"
+thumbnail: "/img/derivatives/simple/obj17/thumbnail.jpg"
 full: "/img/derivatives/simple/obj17/fullwidth.jpg"
 bibliography: p.2
 collectingprogram: Rare Books
