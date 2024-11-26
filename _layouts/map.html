@@ -13,9 +13,21 @@
     <link rel="stylesheet" href="{{ '/assets/cb-styles.css' | relative_url }}" type="text/css">
   </head>
   <body class="d-flex flex-column h-100">
-    <main id="maincontent" role="main" class="flex-shrink-0">
-      <div id="map"></div>
-    </main>
+      {% include header.html %}
+      {% if page.banner %}
+      {% assign b = page.banner %}
+      {% include parallax_image.html collection=b.collection pid=b.pid y=b.y height=b.height image=b.image clickable=b.clickable %}
+    {% endif %}
+    <div id='wax-main'>
+      <div id='wax-content' class='wax-inline-container'>
+        <div id="map"></div>
+      </div>
+    </div>
     {% include map-js.html %}
+    {% include footer.html %}
+    <script type='text/javascript' async defer src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
+    <script type='text/javascript' async defer src='{{ "/assets/popper.min.js" | absolute_url }}'></script>
   </body>
 </html>
+
+<script type='text/javascript' async defer src='{{ "/assets/facets.js" | absolute_url }}'></script>
