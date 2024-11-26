@@ -4,7 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ site.title }}{% if page.label %} | {{ page.label }}{% elsif page.title %} | {{ page.title }}{% endif %}</title>
 
-  <!-- Bootstrap CSS -->
+  <link rel='canonical' href='{{ page.url | absolute_url }}'/>
+  <link rel='icon' type='image/png' href="{{ 'img/book.png' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/timelinestyles.css' | relative_url }}"/>
+  <link rel='stylesheet' href="{{ '/assets/styles.css' | absolute_url }}"/>
+
+  <script type='text/javascript' src="{{ '/assets/jquery-3.2.1.min.js' | absolute_url }}"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ '/assets/javascript/owl/owl.carousel.min.css' | relative_url }}">
   {% if page.title == "Timeline" %}
@@ -13,9 +18,4 @@
   {% if page.title == "Single" %}
   <link rel="stylesheet" href="{{ '/assets/javascript/nouislider/nouislider.min.css' | relative_url }}"/>
   {% endif %}
-  <!-- styles -->
-  <link rel='canonical' href='{{ page.url | absolute_url }}'/>
-  <link rel='icon' type='image/png' href="{{ 'img/book.png' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/assets/timelinestyles.css' | relative_url }}"/>
-  <script type='text/javascript' src="{{ '/assets/jquery-3.2.1.min.js' | absolute_url }}"></script>
 </head>
