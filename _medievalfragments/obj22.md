@@ -3,6 +3,7 @@ pid: obj22
 label: A sample text document
 dateStart: '2024'
 worktype: text
+tTags: 
 format: pdf
 order: '21'
 layout: medfrag_item
