@@ -26,12 +26,10 @@
       dom: 'Bfrtip',
       buttons: [
         { 
+          text: 'Link Button', action: function ( e, dt, button, config ) {window.location = 'linkpage.php';},
           extend: 'collection',
           text: 'Download Data',
-          buttons: ['csvHtml5','excel', {text: 'Link Button',
-      action: function ( e, dt, button, config ) {
-        window.location = 'linkpage.php';
-      }, 'csv']
+          buttons: ['csvHtml5','excel','csv']
         }
       ]
     });
