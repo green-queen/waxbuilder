@@ -1,5 +1,5 @@
 ---
-layout: datadefault
+layout: default
 title: Reuse the Collection Data
 permalink: /data/
 collection: medievalfragments
