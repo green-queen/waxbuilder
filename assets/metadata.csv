@@ -4,5 +4,5 @@
 {%- assign items = site.medievalfragments -%}
 {%- assign fields = site.data.data_download.metadata-export-fields | split: "," -%}
 {{ fields | join: "," }},reference_url
-{% for item in items %}{% for f in fields %}"{{ item[f] | escape }}",{% endfor %}"{{ '/item.html' | absolute_url | append: '?id=' | append: item.pid }}"
+{% for item in items %}{% for f in fields %}"{{ item[f] | escape }}",{% endfor %}"{{ '/medievalfragments/' | absolute_url | append: item.pid }}"
 {% endfor %}
