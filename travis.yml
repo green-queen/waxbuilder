@@ -1,0 +1,15 @@
+sudo: required
+language: ruby
+rvm:
+  - 2.4
+git:
+  depth: 1
+branches:
+  only:
+    - master
+before_script:
+  - bundle exec rake wax:pagemaster events
+script:
+  - bundle exec jekyll build
+after_success:
+  - bundle exec rake wax:push gh-pages
