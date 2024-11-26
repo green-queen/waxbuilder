@@ -30,9 +30,9 @@ map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 #
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,creator,date,description,subject,location,latitude,longitude,source,identifier,type,format,language,rights,rightsstatement"
+metadata-export-fields: "pid,label,agent,location,longitude,latitude,dateStart,dateEnd,recnum,catalogrecord,collectionnum,worktype,tTags,originalwork,citeas,repository,archcoll,box,folder,format,rights,order,layout,collection,thumbnail,full,bibliography,collectingprogram,materials,description,measurement,manifest"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject,creator,format"
+metadata-facets-fields: "tTags,agent,worktype"
 
 ##########
 # COMPOUND OBJECTS
