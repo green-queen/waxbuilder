@@ -3,6 +3,7 @@ pid: obj21
 label: A lorem ipsum document
 dateStart: '2024'
 worktype: text
+tTags: 
 format: pdf
 order: '20'
 layout: medfrag_item
