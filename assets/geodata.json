@@ -1,8 +1,8 @@
 ---
 # generate geojson data for collection items with lat-longs
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.latitude' | where_exp: 'item','item.longitude' -%}
-{%- assign fields = site.data.theme.metadata-export-fields | split: "," -%}
+{%- assign items = site.data.medievalfragments| where_exp: 'item','item.latitude' | where_exp: 'item','item.longitude' -%}
+{%- assign fields = site.data.data_download.metadata-export-fields | split: "," -%}
 {
     "type": "FeatureCollection",
     "features": [ 
@@ -16,7 +16,7 @@
             "properties":{
                 {% for f in fields %}{% if item[f] %}{{ f | jsonify }}: {{ item[f] | jsonify }},{% endif %}
                 {% endfor %}
-                "reference_url": {% if item.parentid %}{{ '/item.html' | absolute_url | append: '?id=' | append: item.parentid | jsonify }}{% else %}{{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid | jsonify }}{% endif %}
+                "reference_url": {% if item.parentid %}{{ '/item.html' | absolute_url | append: '?id=' | append: item.parentid | jsonify }}{% else %}{{ '/medievalfragments/' | absolute_url | append: item.objectid | jsonify }}{% endif %}
             }
         }{% unless forloop.last %}, {% endunless %}{% endfor %}
     ]
