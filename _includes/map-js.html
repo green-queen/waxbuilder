@@ -2,9 +2,9 @@
 {% assign cb_icons = site.pages | where: "name","cb-icons.svg" | first %}
 {% assign icons = cb_icons.icons %}{%- endif -%}
 {% if site.data.theme.map-child-objects == true %}
-{%- assign items = site.qatar | where_exp: 'item','item.pid' -%}
+{%- assign items = site.medievalfragments | where_exp: 'item','item.pid' -%}
 {% else %}
-{%- assign items = site.qatar | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
+{%- assign items = site.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
 {%- assign items = items | where_exp: 'item', 'item.pid != nil' | where_exp: 'item','item.latitude' -%}
 {%- assign fields = site.data.config-map -%}
