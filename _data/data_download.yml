@@ -1,0 +1,3 @@
+metadata-export-fields: "label,artist,dateStart,dateEnd,description,tTags,location,latitude,longitude,originalwork,pid,worktype,archcoll,rights"
+
+metadata-facets-fields: "tTags,artist,worktype"
