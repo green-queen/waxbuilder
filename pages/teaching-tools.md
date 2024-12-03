@@ -73,5 +73,7 @@ permalink: /teaching-tools/
       <a href="https://libraryguides.missouri.edu/c.php?g=1043247&p=7567529" class='card-link'>
          <button>Click Here</button>
          </a>
+     </div>
+  </article>
 </main>
 
