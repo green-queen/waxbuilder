@@ -4,31 +4,84 @@ layout: page
 permalink: /teaching-tools/
 ---
 <style>
-.cards {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
- 
-.card {
-    flex: 0 1 calc(25% - 1em);
-}
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
 </style>
 
-<div class="centered">
-  <section class="cards">
-      <article class="card">
-        <img src="https://static.wixstatic.com/media/9c2ff8_6effc03ec4894476b1e044d2a32638f4~mv2.jpg/v1/fill/w_602,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/313D201B-1C39-4221-909F-3A454C2CAFE3_1_201_a_edited.jpg" alt="Owl in illuminated manuscript">
-        <h4><b>Teaching Manuscripts</b></h4>
-        <p>A website filled with hands-on strategies for teaching book history, including teaching illumination.</p>
-        <a href="https://www.teachingmanuscripts.com" class='card-link'></a>
-      </article>
-      <article class="card">
-        <img src="https://www.getty.edu/art/collections/images/m/00514301.jpg" alt="Initial A: Two Men before a King and A Man Speaking to a Family, from the Vidal Mayor, 1290–1310">
-        <h4><b>Looking at Illuminated Manuscripts: Exploring an Illuminated Manuscript Page | The Getty</b></h4>
-        <p>A guide from the J. Paul Getty Museum for 3-12 educators on teaching with illuminated manuscript pages.</p>
-        <a href="https://www.getty.edu/education/teachers/classroom_resources/curricula/manuscripts/manuscripts_lesson01.html" class='card-link'></a>
-      </article>
-    </section>
-</div>
+<main class="cards">
+  <article class="card">
+    <img src="https://static.wixstatic.com/media/9c2ff8_6effc03ec4894476b1e044d2a32638f4~mv2.jpg/v1/fill/w_602,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/313D201B-1C39-4221-909F-3A454C2CAFE3_1_201_a_edited.jpg" alt="Owl in illuminated manuscript">
+    <div class="text">
+      <h3>Teaching Manuscriptsy</h3>
+      <p>A website filled with hands-on strategies for teaching book history, including teaching illumination.</p>
+      <a href="https://www.teachingmanuscripts.com" class='card-link'>
+         <button>Click Here</button>
+         </a>
+    </div>
+  </article>
+  <article class="card">
+      <img src="https://www.getty.edu/art/collections/images/m/00514301.jpg" alt="Initial A: Two Men before a King and A Man Speaking to a Family, from the Vidal Mayor, 1290–1310">
+      <div class="text">
+      <h3>Looking at Illuminated Manuscripts: Exploring an Illuminated Manuscript Page | The Getty</h3>
+      <p>A guide from the J. Paul Getty Museum for 3-12 educators on teaching with illuminated manuscript pages.</p>
+      <a href="https://www.getty.edu/education/teachers/classroom_resources/curricula/manuscripts/manuscripts_lesson01.html" class='card-link'>
+         <button>Click Here</button>
+         </a>
+    </div>
+  </article>
+  <article class="card">
+    <img src="/pix/samples/22l.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Dynamically Procrastinate</h3>
+      <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="/pix/samples/15l.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Best in class</h3>
+      <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+      <button>Just do it...</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="/pix/samples/25m.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Dynamically innovate supply chains</h3>
+      <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+      <button>Here's why</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="/pix/samples/16l.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Sanity check</h3>
+      <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+      <button>Stop here</button>
+    </div>
+  </article>
+</main>
 
