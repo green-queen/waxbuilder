@@ -1,7 +1,7 @@
 {%- assign cloud-fields = include.fields | split: ";" -%}
 
 {% if site.data.theme.browse-child-objects == true %}
-{%- assign items = site.data.medievalfragments | where_exp: 'item','item.ptid' -%}
+{%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' -%}
 {% else %}
 {%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
