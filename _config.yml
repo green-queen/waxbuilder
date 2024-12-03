@@ -128,8 +128,7 @@ menu:
         link: '/exhibit/c/'
   - label: 'About'
     link: '/about/'
-  - label: 'Test'
-    link: '/tags.html'
+ 
   
   
 
