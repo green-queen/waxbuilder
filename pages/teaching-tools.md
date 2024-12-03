@@ -10,7 +10,7 @@ permalink: /teaching-tools/
     align-items: stretch;
   }
   .card {
-    flex: 0 0 200px;
+    flex: 2 2 200px;
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
