@@ -5,18 +5,18 @@ layout: timelinedefault
   {% assign taglist = '' %}
   {{ taglist }}
   {% for item in site.medievalfragments %}
-    {% assign tags = item.tTags | split:', ' %}
+    {% assign tags = item.tTags | split:',' %}
     {% for tag in tags %}
       {% assign taglist = taglist | append: tag | append: ', ' %}
     {% endfor %}
   {% endfor %}
-  {% assign taglist = taglist | split: ', ' | uniq %}
+  {% assign taglist = taglist | split: ',' | uniq %}
   {% for tag in taglist %}
   <div class="tag-frame" id="{{ tag | url_encode }}">
     <h1>{{ tag }}</h1>
     <div class="card-deck pt-3">
       {% for item in site.medievalfragments %}
-        {% assign tagsArray = item.tTags | split:', ' %}
+        {% assign tagsArray = item.tTags | split:',' %}
         {% for tagArray in tagsArray %}
           {% if tagArray == tag %}
           <a href="{{ item.url | relative_url }}" class="card text-white">
