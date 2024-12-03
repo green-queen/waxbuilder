@@ -6,13 +6,12 @@
 {%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
 
-{% comment %} Capture all cloud terms {% endcomment %} 
 {%- assign raw-terms = "" -%}
 {%- for c in cloud-fields -%}
 {% assign new = items | map: c | compact | join: ";" %}
 {% assign raw-terms = raw-terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign raw-terms = raw-terms | downcase | split: ";" -%}
+{%- assign raw-terms = raw-terms | split: ";" -%}
 
 {% comment %} Clean up raw terms {% endcomment %} 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
