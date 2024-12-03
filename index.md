@@ -24,8 +24,9 @@ The Medieval Fragments collections is a collections of fragments, largely loose 
 <em>A bird's-eye view of Cornell's RMC</em>
 </div>
 
-<br/>
+<div>
 Some of the objects in this collection are part of the [Medieval manuscript fragments archival collection](https://digital.library.cornell.edu/catalog?f%5Barchival_collection_tesim%5D%5B%5D=Medieval+manuscript+fragments&search_field=all_fields) that has been digitized and is publicly available online.
+</div>
 
 ### Browse the Collection
 
