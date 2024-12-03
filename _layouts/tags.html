@@ -7,7 +7,7 @@ layout: timelinedefault
   {% for item in site.medievalfragments %}
     {% assign tags = item.tTags | split:',' %}
     {% for tag in tags %}
-      {% assign taglist = taglist | append: tag | append: ', ' %}
+      {% assign taglist = taglist | append: tag | append: ',' %}
     {% endfor %}
   {% endfor %}
   {% assign taglist = taglist | split: ',' | uniq %}
