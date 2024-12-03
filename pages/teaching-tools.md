@@ -11,7 +11,7 @@ permalink: /teaching-tools/
 }
  
 .card {
-    flex: 0 1 24%;
+    flex: 0 1 calc(25% - 1em);
 }
 </style>
 
