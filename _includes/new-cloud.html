@@ -1,25 +1,25 @@
+{%- assign cloud-fields = include.fields | split: ";" -%}
 
-<div class="container-fluid">
-  <div class="row align-items-center" id="tag-viewport">
-    <div class="col">
-      <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
-        {% assign taglist = '' %}
-        {{ taglist }}
-        {% for item in site.medievalfragments %}
-          {% assign tags = item.tTags | split:',' %}
-          {% for tag in tags %}
-            {% assign taglist = taglist | append: tag | append: ',' %}
-          {% endfor %}
-        {% endfor %}
-        {% assign taglist = taglist | split: ',' | uniq %}
-        {% for tag in taglist %}
-        <div class="tag p-2 bg-light small rounded d-inline-block">
-          {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
-          <a href="{{ tagURL | relative_url }}" class="text-dark">
-            {{tag}}
-          </a>
-        </div>
-        {% endfor %}
-      </div>
+{% if site.data.theme.browse-child-objects == true %}
+{%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' -%}
+{% else %}
+{%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
+{% endif %}
+
+{%- assign taglist = "" -%}
+{%- for c in cloud-fields -%}
+{% assign new = items | map: c | compact | join: ";" %}
+{% assign taglist = taglist | append: "," | append: new %}
+{%- endfor -%}
+{%- assign taglist = taglist | split: "," -%}
+{% for item in taglist %}
+  <div class="tag p-2 bg-light small rounded d-inline-block">
+    {% capture itemURL %}/tags/#{{ item | url_encode }}{% endcapture %}
+      <a href="{{ itemURL | relative_url }}" class="text-dark">
+        {{item}}
+      </a>
     </div>
-  </div>
+{% endfor %}
+
+{%- assign termsMin = include.min | plus: 0 | default: 1 -%}
+{%- assign cloud_id = include.id | default: "cloud" -%}
