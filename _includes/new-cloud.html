@@ -11,7 +11,7 @@
 {%- assign taglist = taglist | split: "," -%}
 
 {%- capture items -%}{%- for item in taglist -%}{%- if item != "" and item != " " -%}{{ item | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
-{%- assign item = item | split: "," | sort -%}
+{%- assign items = items | split: "," | sort -%}
 {%- assign uniqueTags = items | uniq | sort -%}
 
 {% for item in uniqueTags %}
