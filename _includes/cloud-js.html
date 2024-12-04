@@ -8,16 +8,17 @@
 
 {%- assign raw-terms = "" -%}
 {%- for c in cloud-fields -%}
-{% assign new = items | map: c | compact | join: "," %}
-{% assign raw-terms = raw-terms | append: "," | append: new %}
+{% assign new = items | map: c | compact | join: ";" %}
+{% assign raw-terms = raw-terms | append: ";" | append: new %}
 {%- endfor -%}
-{%- assign raw-terms = raw-terms | split: "," -%}
+{%- assign raw-terms = raw-terms | split: ";" -%}
 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
 {%- assign terms = terms | split: ";" | sort -%}
 {%- assign uniqueTerms = terms | uniq | sort -%}
 {% for term in uniqueTerms %}
-  {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
+  {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
+  termRef = tagURL
 {% endfor %}
 
 {%- assign termsMin = include.min | plus: 0 | default: 1 -%}
