@@ -1,7 +1,7 @@
 {%- assign fields = include.fields | split: ";" -%}
 
 {%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
-{% endif %}
+
 
 {%- assign taglist = "" -%}
 {%- for field in fields -%}
