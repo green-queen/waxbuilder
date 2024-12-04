@@ -6,11 +6,13 @@
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         {% assign taglist = '' %}
         {{ taglist }}
-        {% for item in site.medievalfragments %}
-          {% assign tags = item.location | split:',' %}
+        {%- for field in fields -%}
+          {% for item in site.medievalfragments %}
+          {% assign tags = item.field | split:',' %}
           {% for tag in tags %}
             {% assign taglist = taglist | append: tag | append: ',' %}
           {% endfor %}
+        {% endfor %}
         {% endfor %}
         {% assign taglist = taglist | split: ',' | uniq %}
         {% for tag in taglist %}
