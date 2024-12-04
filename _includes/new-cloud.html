@@ -5,7 +5,7 @@
 
 {%- assign taglist = "" -%}
 {%- for field in fields -%}
-{% assign new = items | map: field | compact | join: ";" %}
+{% assign new = items | map: field | compact | join: "," %}
 {% assign taglist = taglist | append: "," | append: new %}
 {%- endfor -%}
 {%- assign taglist = taglist | split: "," -%}
