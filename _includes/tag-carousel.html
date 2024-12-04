@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
   <div class="row align-items-center" id="tag-viewport">
     <div class="col">
@@ -5,7 +6,7 @@
         {% assign taglist = '' %}
         {{ taglist }}
         {% for item in site.medievalfragments %}
-          {% assign tags = item.tTags | split:',' %}
+          {% assign tags = item.[include.fields] | split:',' %}
           {% for tag in tags %}
             {% assign taglist = taglist | append: tag | append: ',' %}
           {% endfor %}
