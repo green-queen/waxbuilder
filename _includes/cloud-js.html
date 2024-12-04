@@ -6,6 +6,33 @@
 {%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
 
+{%- assign taglist = "" -%}
+{%- for c in cloud-fields -%}
+{% assign new = items | map: c | compact | join: ";" %}
+{% assign taglist = taglist | append: "," | append: new %}
+{%- endfor -%}
+{%- assign taglist = taglist | split: "," -%}
+{% for item in taglist %}
+  <div class="tag p-2 bg-light small rounded d-inline-block">
+    {% capture itemURL %}/tags/#{{ item | url_encode }}{% endcapture %}
+      <a href="{{ itemURL | relative_url }}" class="text-dark">
+        {{item}}
+      </a>
+    </div>
+{% endfor %}
+
+{%- assign termsMin = include.min | plus: 0 | default: 1 -%}
+{%- assign cloud_id = include.id | default: "cloud" -%}
+
+
+<!--{%- assign cloud-fields = include.fields | split: ";" -%}
+
+{% if site.data.theme.browse-child-objects == true %}
+{%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' -%}
+{% else %}
+{%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
+{% endif %}
+
 {%- assign raw-terms = "" -%}
 {%- for c in cloud-fields -%}
 {% assign new = items | map: c | compact | join: ";" %}
@@ -19,7 +46,7 @@
 {%- assign uniqueTerms = terms | uniq | sort -%}
 
 {%- assign termsMin = include.min | plus: 0 | default: 1 -%}
-{%- assign cloud_id = include.id | default: "cloud" -%}
+{%- assign cloud_id = include.id | default: "cloud" -%}-->
 
 <script>
     /* subject terms + count */
