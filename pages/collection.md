@@ -13,4 +13,4 @@ This site's collection comprises a set of objects, each of which is represented 
 {% include tag-carousel.html fields=location %}
 
 ## Subjects
-
+{% include tag-carousel.html fields=tTags %}
