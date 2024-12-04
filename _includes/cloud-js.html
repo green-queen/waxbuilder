@@ -6,17 +6,21 @@
 {%- assign items = site.data.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
 
-{%- assign taglist = "" -%}
+{%- assign raw-terms = "" -%}
 {%- for c in cloud-fields -%}
-{% assign new = items | map: c | compact | join: ";" %}
-{% assign taglist = taglist | append: "," | append: new %}
+{% assign new = items | map: c | compact | join: "," %}
+{% assign raw-terms = raw-terms | append: "," | append: new %}
 {%- endfor -%}
-{%- assign taglist = taglist | split: "," -%}
-{% for item in taglist %}
+{%- assign raw-terms = raw-terms | split: "," -%}
+
+{%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
+{%- assign terms = terms | split: ";" | sort -%}
+{%- assign uniqueTerms = terms | uniq | sort -%}
+{% for term in uniqueTerms %}
   <div class="tag p-2 bg-light small rounded d-inline-block">
-    {% capture itemURL %}/tags/#{{ item | url_encode }}{% endcapture %}
-      <a href="{{ itemURL | relative_url }}" class="text-dark">
-        {{item}}
+    {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
+      <a href="{{ termURL | relative_url }}" class="text-dark">
+        {{term}}
       </a>
     </div>
 {% endfor %}
