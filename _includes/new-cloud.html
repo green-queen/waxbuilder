@@ -8,8 +8,13 @@
 {% assign new = items | map: field | compact | join: ";" %}
 {% assign taglist = taglist | append: "," | append: new %}
 {%- endfor -%}
-{%- assign taglist = taglist | uniq | split: "," -%}
-{% for item in taglist %}
+{%- assign taglist = taglist | split: "," -%}
+
+{%- capture items -%}{%- for item in taglist -%}{%- if item != "" and item != " " -%}{{ item | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
+{%- assign item = item | split: "," | sort -%}
+{%- assign uniqueTags = terms | uniq | sort -%}
+
+{% for item in uniqueTags %}
   <div class="tag p-2 bg-light small rounded d-inline-block">
     {% capture itemURL %}/tags/#{{ item | url_encode }}{% endcapture %}
       <a href="{{ itemURL | relative_url }}" class="text-dark">
