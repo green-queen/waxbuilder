@@ -1,3 +1,4 @@
+{%- assign fields = include.fields | split: ";" -%}
 
 <div class="container-fluid">
   <div class="row align-items-center" id="tag-viewport">
@@ -6,7 +7,7 @@
         {% assign taglist = '' %}
         {{ taglist }}
         {% for item in site.medievalfragments %}
-          {% assign tags = item.[include.fields] | split:',' %}
+          {% assign tags = item.fields | split:',' %}
           {% for tag in tags %}
             {% assign taglist = taglist | append: tag | append: ',' %}
           {% endfor %}
