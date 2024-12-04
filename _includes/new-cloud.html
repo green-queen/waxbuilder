@@ -11,9 +11,9 @@
 {% assign new = items | map: c | compact | join: ";" %}
 {% assign taglist = taglist | append: "," | append: new %}
 {%- endfor -%}
-{%- assign taglist = taglist | split: "," -%}
+{%- assign taglist = taglist | uniq | split: "," -%}
 
-{% for item in uniqueTags %}
+{% for item in taglist %}
   <div class="tag p-2 bg-light small rounded d-inline-block">
     {% capture itemURL %}/tags/#{{ item | url_encode }}{% endcapture %}
       <a href="{{ itemURL | relative_url }}" class="text-dark">
