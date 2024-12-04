@@ -18,7 +18,6 @@
 {%- assign uniqueTerms = terms | uniq | sort -%}
 {% for term in uniqueTerms %}
   {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
-  termRef = tagURL
 {% endfor %}
 
 {%- assign termsMin = include.min | plus: 0 | default: 1 -%}
