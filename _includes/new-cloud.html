@@ -12,7 +12,6 @@
 {% assign taglist = taglist | append: "," | append: new %}
 {%- endfor -%}
 {%- assign taglist = taglist | split: "," -%}
-{%- assign uniqueTags = items | uniq | sort -%}
 
 {% for item in uniqueTags %}
   <div class="tag p-2 bg-light small rounded d-inline-block">
