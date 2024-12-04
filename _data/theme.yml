@@ -1,7 +1,7 @@
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: tTags;artist # set the field to be featured in the cloud (if left blank, none will be generated)
+subjects-fields: tTags # set the field to be featured in the cloud (if left blank, none will be generated)
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
