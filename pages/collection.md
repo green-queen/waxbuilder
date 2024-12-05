@@ -11,7 +11,7 @@ This site's collection comprises a set of objects, each of which is represented 
 {% include gallery.html collection='medievalfragments' facet_by='label|originalwork|worktype|' num_column=4 %}
 
 ## Locations
-{% include tag-carousel.html fields=location %}
+{% include tag-carousel.html %}
 
 ## Subjects
-{% include tag-carousel.html fields=tTags %}
+{% include tag-carousel.html %}
