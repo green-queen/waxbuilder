@@ -1,20 +1,25 @@
-{%- assign tag-fields = page.fields | split: ";" -%}
-
-{%- assign raw-terms = "" -%}
-{{ raw-terms }}
-{%- for c in tag-fields -%}
-{% assign new = items | map: c | compact | join: "," %}
-{% assign raw-terms = raw-terms | append: "," | append: new %}
-{%- endfor -%}
-{%- assign raw-terms = raw-terms | split: "," -%}
-
-{%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
-{%- assign terms = terms | split: ";" | sort -%}
-{%- assign uniqueTerms = terms | uniq | sort -%}
-{% for term in uniqueTerms %}
-    <div class="tag p-2 bg-light small rounded d-inline-block">
-      {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
-        <a href="{{ termURL | relative_url }}" class="text-dark">
-            {{term}}
-        </a>
-{%- endfor -%}
+<div class="container-fluid">
+  <div class="row align-items-center" id="tag-viewport">
+    <div class="col">
+      <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
+       {% assign fields = page.fields } | split:';' %}
+        {% assign taglist = '' %}
+        {{ taglist }}
+        {% for f in fields %}
+          {% for item in site.medievalfragments %}
+            {% assign tags = item.f | split:',' %}
+            {% for tag in tags %}
+              {% assign taglist = taglist | append: tag | append: ',' %}
+           {% endfor %}
+        {% endfor %}
+        {% assign taglist = taglist | split: ',' | uniq %}
+        {% for tag in taglist %}
+        <div class="tag p-2 bg-light small rounded d-inline-block">
+          {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
+          <a href="{{ tagURL | relative_url }}" class="text-dark">
+            {{tag}}
+          </a>
+        </div>
+        {% endfor %}
+    {% endfor %}
+    
