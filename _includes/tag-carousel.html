@@ -2,7 +2,7 @@
   <div class="row align-items-center" id="tag-viewport">
     <div class="col">
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
-       {% assign fields = page.fields %} | split:';' %}
+       {% assign fields = page.fields | split:';' %}
         {% assign taglist = '' %}
         {{ taglist }}
         {% for f in fields %}
