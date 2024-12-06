@@ -1,18 +1,4 @@
 ##########
-# SUBJECTS PAGE
-#
-subjects-fields: tTags # set the field to be featured in the cloud (if left blank, none will be generated)
-subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
-subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
-
-##########
-# LOCATIONS PAGE
-#
-locations-fields: location # set the field to be featured in the cloud
-locations-min: 1 # min size for subject cloud, too many terms = slow load time!
-locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
-
-##########
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
