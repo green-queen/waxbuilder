@@ -3,11 +3,11 @@
     <div class="col">
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
        {% assign fields = page.fields | split:';' %}
+        {% assign taglist = '' %}
+        {{ taglist }}
         {% for f in fields %}
           {% for item in site.medievalfragments %}
             {% assign tags = item.tTags | split:',' %}
-            {% assign taglist = '' %}
-            {{ taglist }}
             {% for tag in tags %}
               {% assign taglist = taglist | append: tag | append: ',' %}
            {% endfor %}
