@@ -7,7 +7,7 @@
            {% assign taglist = '' %}
            {{ taglist }} 
             {% for item in site.medievalfragments %}
-              {% assign tags = item.i | split:',' %}
+              {% assign tags = item.[cloud-fields.i] | split:',' %}
               {% for tag in tags %}
                 {% assign taglist = taglist | append: tag | append: ',' %}
               {% endfor %}
