@@ -3,15 +3,15 @@
     <div class="col">
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         <div class="container mt-5" id="tag-view">
-  {% assign taglist = '' %}
-  {{ taglist }}
-  {% for item in site.medievalfragments %}
-    {% assign tags = item.tTags | split:',' %}
-    {% for tag in tags %}
-      {% assign taglist = taglist | append: tag | append: ',' %}
-    {% endfor %}
-  {% endfor %}
-  {% assign taglist = taglist | split: ',' | uniq %}
+          {% assign taglist = '' %}
+          {{ taglist }}
+          {% for item in site.medievalfragments %}
+          {% assign tags = item.[includes.fields] | split:',' %}
+           {% for tag in tags %}
+            {% assign taglist = taglist | append: tag | append: ',' %}
+           {% endfor %}
+          {% endfor %}
+          {% assign taglist = taglist | split: ',' | uniq %}
             {% for tag in taglist %}
               <div class="tag-frame" id="{{ tag | url_encode }}">
               <h1>{{ tag }}</h1>
