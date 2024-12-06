@@ -3,7 +3,7 @@
     <div class="col">
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         {% assign fields = page.fields | split:';' %}
-        {{ field }}
+        {{ fields }}
         {% assign taglist = '' %}
         {{ taglist }}
         {% for field in fields %}
