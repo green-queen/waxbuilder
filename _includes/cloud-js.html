@@ -1,24 +1,24 @@
 {%- assign cloud-fields = include.fields | split: ";" -%}
 
 {% if site.data.theme.browse-child-objects == true %}
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+{%- assign items = site.medievalfragments| where_exp: 'item','item.pid' -%}
 {% else %}
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: 'item','item.parentid == nil' -%}
+{%- assign items = site.medievalfragments | where_exp: 'item','item.pid' | where_exp: 'item','item.parentid == nil' -%}
 {% endif %}
 
-{% comment %} Capture all cloud terms {% endcomment %} 
 {%- assign raw-terms = "" -%}
 {%- for c in cloud-fields -%}
-{% assign new = items | map: c | compact | join: ";" %}
-{% assign raw-terms = raw-terms | append: ";" | append: new %}
+{% assign new = items | map: c | compact | join: "," %}
+{% assign raw-terms = raw-terms | append: "," | append: new %}
 {%- endfor -%}
-{%- assign raw-terms = raw-terms | downcase | split: ";" -%}
+{%- assign raw-terms = raw-terms | split: "," -%}
 
 {% comment %} Clean up raw terms {% endcomment %} 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
 {%- assign terms = terms | split: ";" | sort -%}
 {%- assign uniqueTerms = terms | uniq | sort -%}
-
+{% for term in uniqueTerms %}
+    {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
 {%- assign termsMin = include.min | plus: 0 | default: 1 -%}
 {%- assign cloud_id = include.id | default: "cloud" -%}
 
@@ -58,7 +58,7 @@
         {% if include.shuffle == true %}shuffle(array);{% endif %}
         for (i = 0; i < array.length; i++) {
             size = mapSize(array[i][1]);
-            items += '<a class="btn btn-{{ page.button | default: "outline-primary" }} m-2 tagcloud' + size + '" href="{{ "/browse.html" | relative_url }}#' + encodeURIComponent(array[i][0]) + '" >' + array[i][0] + '</a>';
+            items += '<a class="btn btn-{{ page.button | default: "outline-primary" }} m-2 tagcloud' + size + '" href="{{ termURL | relative_url }} '" >' + array[i][0] + '</a>';
         }
         cloud.innerHTML = items;
     }
