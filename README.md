@@ -10,4 +10,44 @@ The data folder contains your most essential files, including the:
   - Raw images
   - Config files for the map (config-map.csv and config-theme-colors.csv)
   - Your uploaded metadata csv
-  - theme.yml file
+  - theme.yml file (which includes settings for the map)
+
+## _exhibits
+The exhibits folder contains the Markdown files that contain your exhibits. See the Wax Documentation for details. This is a native Wax feature.
+
+## _includes
+This folder includes all of the includes for layouts and features across the site. This folder includes the head, header, and footer elements, as well as various viewers and the tag carousel. For information on how to use an include, see the docs.md file in the _includes folder.
+
+## _layouts
+This folder includes all of the page layouts for the site, including:
+  - default.html: the default layout
+  - event.html: the layout for an individual event in the timeline
+  - exhibit.html: the default layout for an exhibit
+  - generic_collection_item.html: the default layout for an individual collection item
+  - grid.html: the grid layout in the timeline
+  - map.html: the default layout for the map
+  - page.html: the default page layout
+  - single.html: the single layout in the timeline
+  - tags.html: the default layout for tags.md, from which tag pages generate
+  - timeline.html: the layout for the timeline
+  - timedefault.html: the base layout for all timeline elements
+    
+## _sass
+This folder contains the styling elements for the site and its assets.
+
+## _assets
+This folder contains all scripts, images, and stylesheeets for various Javascript and HTML elements on the site.
+
+## _img
+
+## _pages
+
+## _search
+
+## tags.md
+
+## index.md
+
+## _config.yml
+
+
