@@ -7,7 +7,7 @@
           {{ taglist }} 
           {% assign fields = page.fields | split:';' %}
           {% for i in fields %}
-            {% assign tags = item.i | split:',' %}
+            {% assign tags = item.tTags | split:',' %}
             {% for tag in tags %}
               {% assign taglist = taglist | append: tag | append: ',' %}
            {% endfor %}
