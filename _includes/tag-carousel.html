@@ -13,7 +13,6 @@
                 {% assign taglist = taglist | append: tag | append: ',' %}
               {% endfor %}
             {% endfor %}
-          {% endfor %}
         
             {% assign taglist = taglist | split: ',' | uniq %}
             {% for tag in taglist %}
@@ -24,7 +23,7 @@
                 </a>
               </div>
             {% endfor %}
-
+          {% endfor %}
       </div>
     </div>
   </div>
