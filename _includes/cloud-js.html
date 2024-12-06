@@ -15,7 +15,7 @@
 
 {% comment %} Clean up raw terms {% endcomment %} 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
-{%- assign terms = terms | split: ";" | sort -%}
+{%- assign terms = terms | split: "," | sort -%}
 {% for term in terms %}
     {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
 {%- endfor -%}
