@@ -16,7 +16,7 @@
               <h1>{{ tag }}</h1>
               <div class="card-deck pt-3">
               {% for item in site.medievalfragments %}
-                {% assign tagsArray = item.[includes.fields] | split:',' %}
+                {% assign tagsArray = item.[include.fields] | split:',' %}
                 {% for tagArray in tagsArray %}
                 {% if tagArray == tag %}
                 <a href="{{ item.url | relative_url }}" class="card text-white">
