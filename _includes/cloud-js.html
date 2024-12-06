@@ -21,7 +21,7 @@
     {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
 {%- assign termsMin = include.min | plus: 0 | default: 1 -%}
 {%- assign cloud_id = include.id | default: "cloud" -%}
-
+{%- endfor -%}
 <script>
     /* subject terms + count */
     var terms = [
