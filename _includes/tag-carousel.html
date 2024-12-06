@@ -5,7 +5,7 @@
           {% assign taglist = '' %}
           {{ taglist }}
           {% for item in site.medievalfragments %}
-          {% assign tags = item.[includes.fields] | split:',' %}
+          {% assign tags = item.[include.fields] | split:',' %}
            {% for tag in tags %}
             {% assign taglist = taglist | append: tag | append: ',' %}
            {% endfor %}
