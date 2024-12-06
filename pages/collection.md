@@ -16,4 +16,4 @@ This site's collection comprises a set of objects, each of which is represented 
 
 ## Subjects
 {% include cloud.html fields="subject;worktype" min=2 %}
-{% include tag-carousel.html field="location" %}
+{% include tag-carousel.html fields="location" %}
