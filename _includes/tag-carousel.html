@@ -2,10 +2,10 @@
   <div class="row align-items-center" id="tag-viewport">
     <div class="col">
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
-       {% assign taglist = '' %}
-       {{ taglist }}
        {% assign fields = page.fields | split:';' %}
         {% for f in fields %}
+        {% assign taglist = '' %}
+        {{ taglist }}
           {% for item in site.medievalfragments %}
             {% assign tags = item.f | split:',' %}
             {% for tag in tags %}
