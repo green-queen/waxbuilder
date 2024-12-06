@@ -5,10 +5,10 @@
         {% assign cloud-fields = '' %}
         {{ cloud-fields }}
         {% for i in page.fields %}
-          {% assign fields = page.fields[i] | split:';' %}
-          {% for field in fields %}
-            {% assign cloud-fields = cloud-fields | append: field | append: ';' %}
-        {% endfor %}
+          {% assign fields = page.fields | split:';' %}
+          {% for i in fields %}
+            {% assign cloud-fields = cloud-fields | append: fields[i] | append: ';' %}
+         {% endfor %}
         {% endfor %}
         
         {% assign taglist = '' %}
