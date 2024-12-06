@@ -16,12 +16,13 @@
 {% comment %} Clean up raw terms {% endcomment %} 
 {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
 {%- assign terms = terms | split: ";" | sort -%}
-{%- assign uniqueTerms = terms | uniq | sort -%}
-{% for term in uniqueTerms %}
+{% for term in terms %}
     {% capture termURL %}/tags/#{{ term | url_encode }}{% endcapture %}
+{%- endfor -%}
+{%- assign uniqueTerms = terms | uniq | sort -%}
+
 {%- assign termsMin = include.min | plus: 0 | default: 1 -%}
 {%- assign cloud_id = include.id | default: "cloud" -%}
-{%- endfor -%}
 <script>
     /* subject terms + count */
     var terms = [
