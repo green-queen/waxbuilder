@@ -2,13 +2,12 @@
   <div class="row align-items-center" id="tag-viewport">
     <div class="col">
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
-        {% assign cloud-fields = page.fields | split: ';' | uniq %}
-          {% for i in cloud-fields %}
-          {% assign field = cloud-fields[i] %}
-          {% assign taglist = '' %}
-           {{ taglist }} 
-            {% for item in site.medievalfragments %}
-              {% assign tags = item.field | split:',' %}
+        {% assign taglist = '' %}
+        {{ taglist }} 
+          {% for item in site.medievalfragments %}
+            {% assign fields = page.fields | split: ';' | uniq %}
+            {% for i in fields %}
+              {% assign tags = item.i | split:',' %}
               {% for tag in tags %}
                 {% assign taglist = taglist | append: tag | append: ',' %}
               {% endfor %}
@@ -23,7 +22,6 @@
                 </a>
               </div>
             {% endfor %}
-          {% endfor %}
       </div>
     </div>
   </div>
