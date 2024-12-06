@@ -4,18 +4,12 @@
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         {% assign taglist = '' %}
         {{ taglist }}
-        {% assign fields = '' %}
-        {{ fields }}
-          {% for item in site.medievalfragments %}
-            {% assign fields = page.fields | split: ';' | uniq %}
-            {% for i in fields %}
-              {% assign field = fields[i] %}
-              {% assign tags = item.field | split:',' %}
-              {% for tag in tags %}
-                {% assign taglist = taglist | append: tag | append: ',' %}
-              {% endfor %}
+        {% for item in site.medievalfragments %}
+          {% assign tags = item.tTags | split:',' %}
+          {% for tag in tags %}
+              {% assign taglist = taglist | append: tag | append: ',' %}
             {% endfor %}
-        {% endfor %}
+           {% endfor %}
         
             {% assign taglist = taglist | split: ',' | uniq %}
             {% for tag in taglist %}
