@@ -23,7 +23,7 @@ url:              'https://kam535.github.io'
 baseurl:          '/miniature-octo-carnival'
 copyright:        'Cornell University Digital CoLab, 2024'
 logo:             '/img/book.png'
-default_thumb:    '/assets/default.png'
+default_thumb:    '/img/default.png'
 metadata: 'medievalfragments'
 
 # ---------------------------------------------------------------
