@@ -1,5 +1,5 @@
 
-{%- assign items = site.medievalfragments| where_exp: 'item', 'item.dateStart' -%}
+{%- assign items = site.data[site.metadata]| where_exp: 'item', 'item.dateStart' -%}
 {
     "title": {
         "media": {
@@ -13,9 +13,9 @@
     "events": [
       {% for item in items %}{% if item.dateStart %}{
         "media": {
-          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.thumbnail contains 'http' %}{{ item.thumbnail }}{% else %}{{ item.thumbnail | prepend: '/medievalfragments' | absolute_url }}{% endif %}",
+          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.thumbnail contains 'http' %}{{ item.thumbnail }}{% else %}{{ item.thumbnail | prepend: '/site.data[site.metadata]/' | absolute_url }}{% endif %}",
           "caption": {{ item.label | jsonify }},
-          "link": "{{ 'medievalfragments' | absolute_url | append: item.pid }}",
+          "link": "{{ site.data[site.metadata] | absolute_url | append: item.pid }}",
           "credit": "{{ site.title }}"
         },
         "start_date": { {% if item.dateStart contains '-' %}{% assign dates = item.dateStart | split: '-' %}
