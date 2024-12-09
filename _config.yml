@@ -17,8 +17,8 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Medieval Fragments at Cornell'
-description:      'A minimal exhibit'
+title:            'WaxBuilder'
+description:      'A minimal collections exhibit platform'
 url:              'https://kam535.github.io'
 baseurl:          '/waxbuilder'
 copyright:        'Cornell University Digital CoLab, 2024'
