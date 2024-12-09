@@ -1,5 +1,5 @@
 {% assign cb_icons = site.pages | where: "name","cb-icons.svg" | first %}
-{% assign icons = cb_icons.icons %}{%- endif -%}
+{% assign icons = cb_icons.icons %}
 {%- assign items = site.medievalfragments | where_exp: 'item','item.pid' -%}
 
 {%- assign items = items | where_exp: 'item', 'item.pid != nil' | where_exp: 'item','item.latitude' -%}
