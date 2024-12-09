@@ -1,10 +1,11 @@
 ##########
-# DATA 
-#
+# Settings for the DATA page
+
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-
-data-child-objects: false # true / false - if true, child objects will appear linked in table on data page
 metadata-export-fields: "pid,label,agent,location,longitude,latitude,dateStart,dateEnd,recnum,catalogrecord,collectionnum,worktype,tTags,originalwork,citeas,repository,archcoll,box,folder,format,rights,order,layout,collection,thumbnail,full,bibliography,collectingprogram,materials,description,measurement,manifest"
+
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "tTags,agent,worktype"
+
+data-child-objects: false # true / false - if true, child objects will appear linked in table on data page
