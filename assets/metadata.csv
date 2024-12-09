@@ -1,8 +1,8 @@
 ---
 # create custom metadata csv for download
 ---
-{%- assign items = site.data[site.metadata] -%}
+{%- assign items = site.data.[site.metadata] -%}
 {%- assign fields = site.data.data-settings.metadata-export-fields | split: "," -%}
 {{ fields | join: "," }},reference_url
-{% for item in items %}{% for f in fields %}"{{ item[f] | escape }}",{% endfor %}"{{ '/medievalfragments/' | absolute_url | append: item.pid }}"
+{% for item in items %}{% for f in fields %}"{{ item[f] | escape }}",{% endfor %}"{{ '/site.data.[site.metadata]/' | absolute_url | append: item.pid }}"
 {% endfor %}
