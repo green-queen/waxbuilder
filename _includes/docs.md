@@ -3,3 +3,6 @@ An include is a section of code that can be added to another piece of code by ca
 To add any of the includes in this folder to another piece of code or a page, use {% include "include_name" %}, replacing "include_name" with the name of the include in this folder, with no quotations or file format ending (e.g. docs instead of docs.md). 
 
 WaxBuilder only uses HTML includes, which means that all of the includes in this folder are in HTML only. For an example of the use of a include, see pages > collection.md, which calls the tags-carousel include.
+
+### collection_gallery.html
+collection_gallery and gallery are includes that generate a full gallery of all collection items with thumbnail images. collection_gallery is useful for creating smaller galleries of specific collections contained on the site. A gallery include can be seen on the homepage of the template site.
