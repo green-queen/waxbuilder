@@ -9,9 +9,9 @@ This site's collection comprises a set of objects, each of which is represented 
 
 {% include gallery.html collection='medievalfragments' facet_by='label|originalwork|worktype|' num_column=4 %}
 
-## Locations
+## Subjects
 {% include tag-carousel.html fields="worktype" %}
 {% include tag-carousel.html fields="tTags" %}
 
-## Subjects
+## Locations
 {% include tag-carousel.html fields="location" %}
