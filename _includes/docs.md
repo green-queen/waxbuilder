@@ -4,5 +4,4 @@ To add any of the includes in this folder to another piece of code or a page, us
 
 WaxBuilder only uses HTML includes, which means that all of the includes in this folder are in HTML only. For an example of the use of a include, see pages > collection.md, which calls the tags-carousel include.
 
-### collection_gallery.html
-collection_gallery and gallery are includes that generate a full gallery of all collection items with thumbnail images. collection_gallery is useful for creating smaller galleries of specific collections contained on the site. A gallery include can be seen on the homepage of the template site.
+### For information on what an include does, click on the individual include file and look at the comments at the top of the file.
