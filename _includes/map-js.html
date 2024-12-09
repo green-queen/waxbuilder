@@ -156,7 +156,7 @@
         {% else %}
         mapFeatures.eachLayer(layer => {
             if (layer.feature.properties.id === markerFilter) {
-                layer.openPopup();
+                layer.openPopup();{% endif %}
             }
         });
     }
