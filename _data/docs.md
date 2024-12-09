@@ -8,3 +8,9 @@ If you want to change what information appears in the popup, under **field** wri
 
 ### data-settings.yml
 The file determines the values that will populate the data table and the data downloads. See the comment at the top of this file for instructions/help.
+
+### map-settings.yml
+This file determines the basic settings for the map, like zoom level, center point, etc. You can leave these field blank to use the default setting in maps-js.html and maps.html, or you can change the values to adjust your map's display. I don't recommend changing the navbar or Bootswatch settings, but feel free to do so if you have the know-how. These themes only affect how the map's navigation elements look.
+
+You should also upload two copies of your CSV of collection metadata: one, an original copy that you will never edit; two, a copy that will be the main editing/working copy of your metadata. If you need help setting up a CSV, please see [Minicomp's Wax documentation](https://minicomp.github.io/wiki/wax/preparing-your-collection-data/metadata/).
+
