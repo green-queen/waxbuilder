@@ -39,7 +39,7 @@
 	height: 1600px;
 	-webkit-transform-origin: 0 0;
 	}
-.leaflet-marker-icon,
+.leaflet--icon,
 .leaflet-marker-shadow {
 	display: block;
 	}
