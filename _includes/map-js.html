@@ -25,7 +25,7 @@
 
     /* check for url parameters and set initial view options */ 
     let url = new URL(window.location);
-    var mapCenter = url.searchParams.get('location') ? url.searchParams.get('location').split(',') : [{{ site.data.theme.latitude | default: 46.727485 }}, {{ site.data.theme.longitude | default: -117.014185 }}];
+    var mapCenter = url.searchParams.get('location') ? url.searchParams.get('location').split(',') : [{{ site.data.map-settings.longitude | default: 46.727485 }}, {{ site.data.map-settings.longitude | default: -117.014185 }}];
     var mapZoom = url.searchParams.get('location') ? 16 : {{ 2 | default: 5 }};
     var markerFilter = url.searchParams.get('marker') ? url.searchParams.get('marker') : "";
 
@@ -56,14 +56,14 @@
     };
     L.control.layers(baseMaps).addTo(map);
     /* load base map */
-    {{ site.data.theme.map-base | default: 'Esri_WorldStreetMap' }}.addTo(map);
+    {{ site.data.map-settings.map-base | default: 'Esri_WorldStreetMap' }}.addTo(map);
 
-    {% if site.data.theme.map-search == true %}
+    {% if site.data.map-settings.map-search == true %}
     /* add leaflet-fusesearch */
     var options = {
         title: 'Search Map Items',
         locationholder: 'Search map items...',
-        threshold: {{ site.data.theme.map-search-fuzziness | default: 0.35 }},
+        threshold: {{ site.data.map-settings.map-search-fuzziness | default: 0.35 }},
         showResultFct: function(feature, container) {
             var result = `<strong>${feature.properties.title}</strong><br>`;
             {% for f in fields %}
@@ -79,10 +79,10 @@
     /* add fullscreen control */ 
     map.addControl(new L.Control.Fullscreen());
 
-    {% if site.data.theme.map-cluster == true %}
+    {% if site.data.map-settings.map-cluster == true %}
     /* create cluster group */
     var markers = L.markerClusterGroup({ 
-        maxClusterRadius: {{ site.data.theme.map-cluster-radius | default: 15 }}, 
+        maxClusterRadius: {{ site.data.map-settings.map-cluster-radius | default: 15 }}, 
         singleMarkerMode: true,
         iconCreateFunction: function(cluster) {
             /* custom icon function, tweak default to add more alt text */
@@ -98,12 +98,12 @@
             var c = ' marker-cluster-' + csize;
             return new L.DivIcon({ html: '<div><span class="visually-hidden">' + csize +' cluster of </span><span>' + childCount + '</span><span class="visually-hidden"> items</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
         }
-        {% if site.data.theme.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} 
+        {% if site.data.map-settings.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} 
     });{% endif %}
 
     /* function to create object popups */
     function objectPopups(feature, layer) {
-        {% if site.data.theme.map-search == true %}
+        {% if site.data.map-settings.map-search == true %}
         /* bind feature for search */
         feature.layer = layer;{% endif %}
         /* calculate item link */
@@ -128,7 +128,7 @@
     /* function to add objects to map */
     function objectMarkers(feature,latlng) {
         var marker = L.marker(latlng, {alt: feature.properties.title});
-        {% if site.data.theme.map-cluster == true %}markers.addLayer(marker);{% endif %}
+        {% if site.data.map-settings.map-cluster == true %}markers.addLayer(marker);{% endif %}
         return marker;
     }
 
@@ -136,10 +136,10 @@
     var mapFeatures = L.geoJson(geodata, {
         onEachFeature: objectPopups,
         pointToLayer: objectMarkers
-    }){% if site.data.theme.map-cluster != true %}.addTo(map);{% else %};
+    }){% if site.data.map-settings.map-cluster != true %}.addTo(map);{% else %};
     map.addLayer(markers);{% endif %}
 
-    {% if site.data.theme.map-cluster == true and site.data.theme.map-search == true %}
+    {% if site.data.map-settings.map-cluster == true and site.data.map-settings.map-search == true %}
     /* uncluster when search is clicked */
     document.querySelector('a.button').addEventListener("click", function() {
         markers.disableClustering();
@@ -152,7 +152,7 @@
 
     /* show popup if id in URL query */ 
     if (markerFilter != "") {
-        {% if site.data.theme.map-cluster == true %}
+        {% if site.data.map-settings.map-cluster == true %}
         markers.eachLayer(layer => {
             if (layer.feature.properties.id === markerFilter) {
                 /* uncluster clusters, then show */ 
