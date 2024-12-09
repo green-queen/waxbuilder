@@ -12,22 +12,12 @@ map-cluster: true # true/false, suggested for large collection or with many item
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
 ##########
-# DATA 
-#
-# add metadata fields for export in data downloads (tip: paste in first row of csv)
-# comma delimited list, reference url is automatic
-metadata-export-fields: "pid,label,agent,location,longitude,latitude,dateStart,dateEnd,recnum,catalogrecord,collectionnum,worktype,tTags,originalwork,citeas,repository,archcoll,box,folder,format,rights,order,layout,collection,thumbnail,full,bibliography,collectingprogram,materials,description,measurement,manifest"
-# generate a facets list for given fields, comma delimited
-metadata-facets-fields: "tTags,agent,worktype"
-
-##########
 # COMPOUND OBJECTS
 # 
 # Ignore this section if you are not including any compound objects
 # Note, like other items, child objects will only appear in visualizations if they have the correct metadata (lat long for map; date for timeline)
 # select true below if you'd like your compound object's child objects to appear in any of the pages or features listed
 map-child-objects: true # true / false - if true, and if child item has latitude and longitude, child objects will be displayed on map
-data-child-objects: false # true / false - if true, child objects will appear linked in table on data page
 
 # NAVBAR COLORS
 # If you'd like to change the color of the nav-bar and links, adjust the below. 
