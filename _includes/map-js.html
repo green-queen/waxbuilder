@@ -152,11 +152,10 @@
                 } 
                 layer.openPopup();
             }
-        });
-        {% else %}
-        mapFeatures.eachLayer(layer => {
-            if (layer.feature.properties.id === markerFilter) {
-                layer.openPopup();{% endif %}
+            else {
+                mapFeatures.eachLayer(layer => {
+                if (layer.feature.properties.id === markerFilter) {
+                    layer.openPopup();
             }
         });
     }
