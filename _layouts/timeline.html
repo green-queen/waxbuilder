@@ -7,7 +7,7 @@ layout: timelinedefault
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         {% assign taglist = '' %}
         {{ taglist }}
-        {% for item in site.data[site.metadata] %}
+        {% for item in site.data.[site.metadata] %}
           {% assign tags = item.tTags | split:',' %}
           {% for tag in tags %}
             {% assign taglist = taglist | append: tag | append: ',' %}
@@ -27,7 +27,7 @@ layout: timelinedefault
   </div>
   <div class="row align-items-center" id="timeline-viewport">
     <div class="owl-carousel" id="event-carousel">
-      {% assign sortedItems = site.data[site.metadata] | sort: 'dateStart' %}
+      {% assign sortedItems = site.data.[site.metadata] | sort: 'dateStart' %}
       {% assign groups = sortedItems | group_by_exp:"item", "item.dateStart | truncate: 3, ''"  %}
       {% for group in groups %}
       {% assign decade = group.name  %}
