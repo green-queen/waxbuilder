@@ -11,17 +11,6 @@ map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact m
 map-cluster: true # true/false, suggested for large collection or with many items in same location
 map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
 
-##########
-# COMPOUND OBJECTS
-# 
-# Ignore this section if you are not including any compound objects
-# Note, like other items, child objects will only appear in visualizations if they have the correct metadata (lat long for map; date for timeline)
-# select true below if you'd like your compound object's child objects to appear in any of the pages or features listed
-map-child-objects: true # true / false - if true, and if child item has latitude and longitude, child objects will be displayed on map
-
-# NAVBAR COLORS
-# If you'd like to change the color of the nav-bar and links, adjust the below. 
-# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
 navbar-color: navbar-dark
 # navbar background color
 # Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
