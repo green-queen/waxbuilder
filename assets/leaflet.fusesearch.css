@@ -7,7 +7,7 @@
 
 .leaflet-fusesearch-control .button {
     background-repeat: no-repeat;
-    background-image: url('https://kam535.github.io/miniature-octo-carnival/assets/search-icon.svg');
+    background-image: url('https://kam535.github.io/miniature-octo-carnival/img/search-icon.svg');
     background-position: center;
     background-size: 36px 36px;
     display: block;
@@ -91,7 +91,7 @@
 
 .leaflet-fusesearch-panel .search-image {
     background-repeat: no-repeat;
-    background-image: url('https://kam535.github.io/miniature-octo-carnival/assets/search-input.png');
+    background-image: url('https://kam535.github.io/miniature-octo-carnival/img/search-input.png');
     background-size: 20px 20px;
     background-position: 1px 1px;
     display: inline-block;
