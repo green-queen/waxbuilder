@@ -25,7 +25,7 @@
 
     /* check for url parameters and set initial view options */ 
     let url = new URL(window.location);
-    var mapCenter = url.searchParams.get('location') ? url.searchParams.get('location').split(',') : [{{ site.data.map-settings.longitude | default: 46.727485 }}, {{ site.data.map-settings.longitude | default: -117.014185 }}];
+    var mapCenter = url.searchParams.get('location') ? url.searchParams.get('location').split(',') : [{{ site.data.map-settings.latitude | default: 46.727485 }}, {{ site.data.map-settings.longitude | default: -117.014185 }}];
     var mapZoom = url.searchParams.get('location') ? 16 : {{ site.data.map-settings.zoom-level | default: 5 }};
     var markerFilter = url.searchParams.get('marker') ? url.searchParams.get('marker') : "";
 
