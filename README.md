@@ -39,15 +39,23 @@ This folder contains the styling elements for the site and its assets.
 This folder contains all scripts, images, and stylesheeets for various Javascript and HTML elements on the site.
 
 ## _img
+This folder contains all of the derivate images and some of the icons for the map.
 
 ## _pages
+This folder contains the markdown files for all of the individual pages displayed on the site.
 
 ## _search
+This folder contains the search index.json for the file for the search page/search bar.
 
 ## tags.md
+This file contains the markdown that will generate pages for each tag when they're clicked on.
 
 ## index.md
+This file contains the markdown for the main homepage content of the site.
 
 ## _config.yml
+This file contains all of the settings for teh configuration of the site.
+
+All other files (Gemfiles, RAKEfiles, etc.) are essential to the functioning of Jekyll, which is the static site generator powering all Wax sites. 
 
 
