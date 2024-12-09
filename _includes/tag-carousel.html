@@ -19,7 +19,7 @@ For an example, see pages > collection.md.
             {% assign taglist = taglist | split: ',' | uniq %}
             {% for tag in taglist %}
               <div class="tag p-2 bg-light small rounded d-inline-block">
-                {% capture tagURL %}/tags/#{{ tag | url_encode }}{% endcapture %}
+                {% capture tagURL %}/tags/#{{ tag }}{% endcapture %}
                 <a href="{{ tagURL | relative_url }}" class="text-dark">
                 {{tag}}
                 </a>
