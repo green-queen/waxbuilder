@@ -2,7 +2,7 @@
 # metadata for json export
 ---
 {%- assign items = site.medievalfragments -%}
-{%- assign fields = site.data.data_download.metadata-export-fields | split: "," -%}
+{%- assign fields = site.data.data-settings.metadata-export-fields | split: "," -%}
 { "objects": [
     {%- for item in items -%}
     { 
