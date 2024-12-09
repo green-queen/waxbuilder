@@ -30,4 +30,4 @@ Some of the objects in this collection are part of the [Medieval manuscript frag
 ### Browse the Collection
 
 #### By Item Type
-{% include collection_gallery.html facet_by='object_type' collection='medievalfragments' %}
+{% include collection_gallery.html facet_by='worktype' collection='medievalfragments' %}
