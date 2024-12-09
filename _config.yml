@@ -20,7 +20,7 @@
 title:            'Medieval Fragments at Cornell'
 description:      'A minimal exhibit'
 url:              'https://kam535.github.io'
-baseurl:          '/miniature-octo-carnival'
+baseurl:          '/waxbuilder'
 copyright:        'Cornell University Digital CoLab, 2024'
 logo:             '/img/book.png'
 default_thumb:    '/img/default.png'
@@ -141,7 +141,7 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/kam535/miniature-octo-carnival'
+      link: 'https://github.com/kam535/waxbuilder'
     - label: 'Credits'
       link: '/credits'
     - label: 'Wax Wiki'
