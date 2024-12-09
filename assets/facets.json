@@ -2,12 +2,12 @@
 # facets generator
 # creates json of unique values and their counts of fields given in site.data.theme.metadata-facets-fields
 ---
-{%- if site.data.theme.metadata-facets-fields -%}
-{%- assign fields = site.data.theme.metadata-facets-fields | split: "," -%}
+{%- if site.data.data-settings.metadata-facets-fields -%}
+{%- assign fields = site.data.data-settings.metadata-facets-fields | split: "," -%}
 {
     "facets": [ 
         {% for f in fields %}
-        {%- assign raw-terms = site.data[site.metadata] | map: f | compact | join: ";" | downcase | split: ";" -%}
+        {%- assign raw-terms = site.data.medievalfragments | map: f | compact | join: ";" | downcase | split: ";" -%}
         {%- capture terms -%}{%- for t in raw-terms -%}{%- if t != "" and t != " " -%}{{ t | strip }};{%- endif -%}{%- endfor -%}{%- endcapture -%}
         {%- assign terms = terms | split: ";" | sort -%}
         {%- assign uniqueTerms = terms | uniq | sort -%}
