@@ -1,5 +1,4 @@
 field,display_name,search
 dateStart,Date,true
 agent,Creator,true
-subject,tTags,true
 location,Location,true
