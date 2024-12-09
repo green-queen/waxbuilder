@@ -72,7 +72,7 @@
     };
     var searchCtrl = L.control.fuseSearch(options);
     searchCtrl.addTo(map);
-    searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});{% endif %}
+    searchCtrl.indexFeatures(geodata.features, {{ fields | where: 'search','true' | map: 'field' | unshift: 'title' | jsonify }});
 
     /* add fullscreen control */ 
     map.addControl(new L.Control.Fullscreen());
