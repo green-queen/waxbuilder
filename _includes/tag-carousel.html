@@ -9,7 +9,7 @@ For an example, see pages > collection.md.
       <div class="owl-carousel owl-loaded owl-drag" id="tag-carousel">
         {% assign taglist = '' %}
         {{ taglist }}
-        {% for item in site.medievalfragments %}
+        {% for item in site.data.[site.metadata] %}
           {% assign tags = item.[include.fields] | split:',' %}
           {% for tag in tags %}
               {% assign taglist = taglist | append: tag | append: ',' %}
