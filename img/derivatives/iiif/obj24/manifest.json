@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://cornell-colab.github.io/hist2391/manifests/test.json",
+  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -9,7 +9,7 @@
   },
   "items": [
     {
-      "id": "https://cornell-colab.github.io/hist2391/manifests/test/canvas/3kboj129ek6-m5h5qsm5",
+      "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/3kboj129ek6-m5h5qsm5",
       "type": "Canvas",
       "label": {
         "en": [
@@ -18,7 +18,7 @@
       },
       "duration": 39.70612244897959,
       "accompanyingCanvas": {
-        "id": "https://cornell-colab.github.io/hist2391/manifests/test/canvas/qjhif7955zn-m5h6q7i6",
+        "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/canvas/qjhif7955zn-m5h6q7i6",
         "type": "Canvas",
         "label": {
           "en": [
@@ -29,11 +29,11 @@
         "width": 2815,
         "items": [
           {
-            "id": "https://cornell-colab.github.io/hist2391/manifests/test/canvas/76856478y78967fghhxdf",
+            "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/canvas/76856478y78967fghhxdf",
             "type": "AnnotationPage",
             "items": [
               {
-                "id": "https://cornell-colab.github.io/hist2391/manifests/test/annotation/0sizwbidakmi-m5h6q79l",
+                "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/annotation/0sizwbidakmi-m5h6q79l",
                 "type": "Annotation",
                 "motivation": "painting",
                 "body": {
@@ -50,7 +50,7 @@
                     }
                   ]
                 },
-                "target": "https://cornell-colab.github.io/hist2391/manifests/test/canvas/qjhif7955zn-m5h6q7i6"
+                "target": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/canvas/qjhif7955zn-m5h6q7i6"
               }
             ]
           }
@@ -58,11 +58,11 @@
       },
       "items": [
         {
-          "id": "https://cornell-colab.github.io/hist2391/manifests/test/canvas/page/364",
+          "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/canvas/page/364",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://cornell-colab.github.io/hist2391/manifests/test/annotation/kul7vcwmf6s-m5h5qsm3",
+              "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/annotation/kul7vcwmf6s-m5h5qsm3",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -71,7 +71,7 @@
                 "duration": 1985.024,
                 "format": "39.70612244897959"
               },
-              "target": "https://cornell-colab.github.io/hist2391/manifests/test/canvas/page/364"
+              "target": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/canvas/page/364"
             }
           ]
         }
