@@ -168,6 +168,13 @@ layout: none
     "lunr_id": 15
   },
   {
+    "pid": "obj24",
+    "label": "Qur'an carpet page; al-Fatihah",
+    "collection": "medievalfragments",
+    "permalink": "/medievalfragments/obj24",
+    "lunr_id": 16
+  },
+  {
     "pid": "obj3",
     "label": "Parchment fragment on f. 200v",
     "worktype": "parchment",
@@ -176,7 +183,7 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj3/thumbnail.jpg",
     "bibliography": "f. 200v",
     "permalink": "/medievalfragments/obj3",
-    "lunr_id": 16
+    "lunr_id": 17
   },
   {
     "pid": "obj4",
@@ -187,7 +194,7 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj4/thumbnail.jpg",
     "bibliography": "f. 239v",
     "permalink": "/medievalfragments/obj4",
-    "lunr_id": 17
+    "lunr_id": 18
   },
   {
     "pid": "obj5",
@@ -198,7 +205,7 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj5/thumbnail.jpg",
     "bibliography": "f. 238v",
     "permalink": "/medievalfragments/obj5",
-    "lunr_id": 18
+    "lunr_id": 19
   },
   {
     "pid": "obj6",
@@ -209,7 +216,7 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj6/thumbnail.jpg",
     "bibliography": "f. 167",
     "permalink": "/medievalfragments/obj6",
-    "lunr_id": 19
+    "lunr_id": 20
   },
   {
     "pid": "obj7",
@@ -220,7 +227,7 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj7/thumbnail.jpg",
     "bibliography": "f. 172v",
     "permalink": "/medievalfragments/obj7",
-    "lunr_id": 20
+    "lunr_id": 21
   },
   {
     "pid": "obj8",
@@ -231,7 +238,7 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj8/thumbnail.jpg",
     "bibliography": "f. 64v",
     "permalink": "/medievalfragments/obj8",
-    "lunr_id": 21
+    "lunr_id": 22
   },
   {
     "pid": "obj9",
@@ -242,6 +249,6 @@ layout: none
     "thumbnail": "/img/derivatives/simple/obj9/thumbnail.jpg",
     "bibliography": "f. 166",
     "permalink": "/medievalfragments/obj9",
-    "lunr_id": 22
+    "lunr_id": 23
   }
 ]
