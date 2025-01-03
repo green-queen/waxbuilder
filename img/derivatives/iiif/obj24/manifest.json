@@ -1,5 +1,5 @@
 {
-  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "@context": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/manifest.json",
   "id": "https://example.org/6ekfctyxnbk-m5h9tnw3",
   "type": "Manifest",
   "label": {
