@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/manifest.json",
+  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/complimanifest.json",
   "type": "Manifest",
   "label": {
     "en": [
