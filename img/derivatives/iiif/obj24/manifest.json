@@ -1,3 +1,6 @@
+---
+layout: none
+---
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
   "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/test/manifest.json",
