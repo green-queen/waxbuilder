@@ -21,7 +21,7 @@ layout: none
           "width": 2815,
           "height": 3331,
           "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj24/full/250,/0/default.jpg",
-          "images": [
+          "items": [
             {
               "@type": "oa:Annotation",
               "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/obj24.json",
