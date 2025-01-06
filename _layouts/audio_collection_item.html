@@ -5,11 +5,11 @@ layout: default
 {% comment %}
   The block below controls the image viewer
 {% endcomment %}
-
-
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
   <div class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
+    
+  <div id="clover" class="image-viewer"></div>
   <head>
     <title>Clover IIIF - Viewer - Web Component</title>
     <meta charset="UTF-8" />
@@ -20,6 +20,7 @@ layout: default
       id= "{{ '/' | absolute_url | page.manifest }}"
     />
   </body>
+  </div>
     
     <span class='pagination-link' id='nextlink'></span>
   </div>
