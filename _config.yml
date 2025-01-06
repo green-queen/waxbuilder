@@ -126,7 +126,7 @@ menu:
       - label: 'Parchment fragments'
         link: '/exhibits/b/'
       - label: 'Sample Exhibit Shell'
-        link: '/exhibit/c/'
+        link: '/exhibits/c/'
   - label: 'About'
     link: '/about/'
  
