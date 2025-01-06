@@ -23,6 +23,16 @@ layout: none
           "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj24/full/250,/0/default.jpg",
           "items": [
             {
+              "type": "oa:Annotation",
+              "@id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/3kboj129ek6-m5h5qsm5",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://download.quranicaudio.com/quran/nasser_bin_ali_alqatami/001.mp3",
+                "format": "audio/mp3",
+                "type": "Sound",
+                },
+              "duration": 39.70612244897959,
+              {
               "@type": "oa:Annotation",
               "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/obj24.json",
               "motivation": "sc:painting",
