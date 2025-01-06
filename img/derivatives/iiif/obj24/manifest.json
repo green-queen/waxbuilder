@@ -68,8 +68,8 @@
               "body": {
                 "id": "https://download.quranicaudio.com/quran/nasser_bin_ali_alqatami/001.mp3",
                 "type": "Sound",
-                "duration": 1985.024,
-                "format": "39.70612244897959"
+                "duration": 39.70612244897959,
+                "format": "sound/mp3"
               },
               "target": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/test/canvas/page/364"
             }
