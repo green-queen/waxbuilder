@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://cornell-colab.github.io/hist2391/manifests/test.json",
+  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj24/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
