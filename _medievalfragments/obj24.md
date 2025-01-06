@@ -13,7 +13,7 @@ format: audio
 order: '23'
 layout: medfrag_item
 collection: medievalfragments
-thumbnail: "https://tile.loc.gov/image-services/iiif/service:amed:amedscd:2019714488:0001/full/pct:100/0/default.jpg"
-full: "https://tile.loc.gov/image-services/iiif/service:amed:amedscd:2019714488:0001/full/pct:100/0/default.jpg"
+thumbnail: "/img/derivatives/iiif/images/obj24/full/250,/0/default.jpg"
+full: "/img/derivatives/iiif/images/obj24/full/1140,/0/default.jpg"
 manifest: "/img/derivatives/iiif/obj24/manifest.json"
 ---
