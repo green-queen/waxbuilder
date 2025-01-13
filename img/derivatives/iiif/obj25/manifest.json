@@ -1,46 +1,41 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/manifest.json",
+  "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
-      "Lisa Fagin Davis: Old Books, New Technologies – Medieval Manuscript Fragments and IIIF"
+      "Video Example 3"
     ]
   },
   "items": [
     {
-      "id": "kam535.github.io/waxbuilder/canvas/oavoy0edxkg-m5v6cc85",
+      "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas",
       "type": "Canvas",
-      "height": 1000,
-      "width": 1000,
-      "duration": 843.00,
-      "label": {
-        "en": [
-          "Untitled YouTube canvas"
-        ]
-      },
+      "height": 360,
+      "width": 480,
+      "duration": 572.034,
       "items": [
         {
-          "id": "kam535.github.io/waxbuilder/annotation-page/a1ws2h58r8n-m5v6cc85",
+          "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "kam535.github.io/waxbuilder/annotation-page/a1ws2h58r8n-m5v6cc85/annotation/c7gpva2w5o-m5v6cc85",
+              "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas/page/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
+                "id": "https://fixtures.iiif.io/video/indiana/lunchroom_manners/high/lunchroom_manners_1024kb.mp4",
                 "type": "Video",
-                "height": 1000,
-                "width": 1000,
-                "duration": 843.00,
+                "height": 360,
+                "width": 480,
+                "duration": 572.034,
                 "format": "video/mp4"
-                  },
-                "target": "kam535.github.io/waxbuilder/canvas/oavoy0edxkg-m5v6cc85"
-                  }
-                ]
-              }
+              },
+              "target": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas"
+            }
           ]
         }
       ]
     }
+  ]
+}
