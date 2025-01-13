@@ -9,7 +9,7 @@
   },
   "items": [
     {
-      "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85",
+      "id": "kam535.github.io/waxbuilder/canvas/oavoy0edxkg-m5v6cc85",
       "type": "Canvas",
       "height": 1000,
       "width": 1000,
@@ -30,14 +30,14 @@
       ],
       "items": [
         {
-          "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85/annotation-page/a1ws2h58r8n-m5v6cc85",
+          "id": "kam535.github.io/waxbuilder/annotation-page/a1ws2h58r8n-m5v6cc85",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85/annotation-page/a1ws2h58r8n-m5v6cc85/annotation/c7gpva2w5o-m5v6cc85",
+              "id": "kam535.github.io/waxbuilder/annotation-page/a1ws2h58r8n-m5v6cc85/annotation/c7gpva2w5o-m5v6cc85",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85",
+              "target": "kam535.github.io/waxbuilder/canvas/oavoy0edxkg-m5v6cc85",
               "body": {
                 "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
                 "type": "Video",
