@@ -8,12 +8,10 @@ layout: default
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
   <div class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
-    <body>
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
       <clover-viewer
         id= {{ "https://kam535.github.io/waxbuilder" | append: page.manifest }}
       />
-    </body>
     <span class='pagination-link' id='nextlink'></span>
   </div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
