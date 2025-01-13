@@ -14,9 +14,9 @@ layout: default
         id= {{ "https://kam535.github.io/waxbuilder" | append: page.manifest }}
       />
     </body>
+    <span class='pagination-link' id='nextlink'></span>
   </div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
-  <span class='pagination-link' id='nextlink'></span>
 
 {% comment %}
   The block below controls the item metadata table
