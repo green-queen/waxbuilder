@@ -9,7 +9,7 @@ dateEnd: '2023'
 worktype: video
 format: video
 order: '24'
-layout: medfrag_audio
+layout: medfrag_av
 collection: medievalfragments
 thumbnail: "/img/derivatives/iiif/obj25/thumbnail.png"
 manifest: "/img/derivatives/iiif/obj25/manifest.json"
