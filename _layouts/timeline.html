@@ -49,7 +49,8 @@ layout: timelinedefault
 
         <div class="card-img-overlay d-flex justify-content-center align-items-center rounded">
           <h1 class="mb-0 text-center event-title">
-            <a href="{{ item.url }}" class="text-white">
+            {% capture itemURL %}/{{ item.collection }}/{{ item.pid | url_encode | append: / }}{% endcapture %}
+            <a href="{{ itemURL | relative_url }}" class="text-white">
               {{ item.label }}
             </a>
           </h1>
