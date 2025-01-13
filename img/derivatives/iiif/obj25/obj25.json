@@ -1,0 +1,65 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://example.org/xxhvy9b45he-m5v6bp1h",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Lisa Fagin Davis: Old Books, New Technologies – Medieval Manuscript Fragments and IIIF"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85",
+      "type": "Canvas",
+      "height": 1000,
+      "width": 1000,
+      "duration": 1,
+      "label": {
+        "en": [
+          "Untitled YouTube canvas"
+        ]
+      },
+      "thumbnail": [
+        {
+          "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/thumbnail.png",
+          "type": "Image",
+          "format": "image/png",
+          "height": 870,
+          "width": 1714
+        }
+      ],
+      "items": [
+        {
+          "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85/annotation-page/a1ws2h58r8n-m5v6cc85",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85/annotation-page/a1ws2h58r8n-m5v6cc85/annotation/c7gpva2w5o-m5v6cc85",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85",
+              "body": {
+                "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
+                "type": "Video",
+                "height": 1000,
+                "width": 1000,
+                "service": [
+                  {
+                    "profile": "http://digirati.com/objectifier",
+                    "params": {
+                      "data": "https://www.youtube.com/embed/-EcXmj8I3kw"
+                    }
+                  },
+                  {
+                    "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
+                    "profile": "https://www.youtube.com"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
