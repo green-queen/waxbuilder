@@ -9,29 +9,29 @@
   },
   "items": [
     {
-      "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas",
+      "id": "kam535.github.io/waxbuilder/obj25/canvas",
       "type": "Canvas",
       "height": 360,
       "width": 480,
       "duration": 572.034,
       "items": [
         {
-          "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas/page",
+          "id": "kam535.github.io/waxbuilder/obj25/canvas/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas/page/annotation",
+              "id": "kam535.github.io/waxbuilder/obj25/canvas/page/annotation",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://fixtures.iiif.io/video/indiana/lunchroom_manners/high/lunchroom_manners_1024kb.mp4",
+                "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
                 "type": "Video",
                 "height": 360,
                 "width": 480,
                 "duration": 572.034,
                 "format": "video/mp4"
               },
-              "target": "https://iiif.io/api/cookbook/recipe/0003-mvm-video/canvas"
+              "target": "kam535.github.io/waxbuilder/obj25/canvas"
             }
           ]
         }
