@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/manifest.json",
+  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25",
   "type": "Manifest",
   "label": {
     "en": [
@@ -9,7 +9,7 @@
   },
   "items": [
     {
-      "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85",
+      "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
       "type": "Canvas",
       "height": 1000,
       "width": 1000,
@@ -19,25 +19,16 @@
           "Untitled YouTube canvas"
         ]
       },
-      "thumbnail": [
-        {
-          "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/thumbnail.png",
-          "type": "Image",
-          "format": "image/png",
-          "height": 870,
-          "width": 1714
-        }
-      ],
       "items": [
         {
-          "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85/annotation-page/a1ws2h58r8n-m5v6cc85",
+          "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg/annotation-page/mz8590m45w-m5v9c4mg",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85/annotation-page/a1ws2h58r8n-m5v6cc85/annotation/c7gpva2w5o-m5v6cc85",
+              "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg/annotation-page/mz8590m45w-m5v9c4mg/annotation/ybtiyxgd4r9-m5v9c4mg",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://example.org/xxhvy9b45he-m5v6bp1h/canvas/oavoy0edxkg-m5v6cc85",
+              "target": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
               "body": {
                 "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
                 "type": "Video",
@@ -62,3 +53,4 @@
       ]
     }
   ]
+}
