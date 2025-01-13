@@ -13,7 +13,7 @@
       "type": "Canvas",
       "height": 1000,
       "width": 1000,
-      "duration": 1,
+      "duration": 843.00,
       "label": {
         "en": [
           "Untitled YouTube canvas"
@@ -43,16 +43,10 @@
                 "type": "Video",
                 "height": 1000,
                 "width": 1000,
-                "service": [
-                  {
-                    "profile": "http://digirati.com/objectifier",
-                    "params": {
-                      "data": "https://www.youtube.com/embed/-EcXmj8I3kw"
-                    }
+                "duration": 843.00,
+                "format": "video/mp4"
                   },
-                  {
-                    "id": "https://www.youtube.com/watch?v=-EcXmj8I3kw",
-                    "profile": "https://www.youtube.com"
+                "target": "kam535.github.io/waxbuilder/annotation-page/a1ws2h58r8n-m5v6cc85"
                   }
                 ]
               }
