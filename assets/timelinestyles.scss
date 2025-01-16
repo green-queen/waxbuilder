@@ -1,11 +1,16 @@
 ---
 ---
+/* 
+THIS FILE IS WHERE YOU EDIT THE STYLES FOR THE TIMELINE
+*/
 
 // start content
+/* Change the URLs below to change the fonts that are used in the timeline */
 @import url('https://fonts.googleapis.com/css?family=Jost:300,400,700&font-display=auto');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+/* Change the font name below to change the fonts that are used in the timeline. This should reflect what you import above. */
 body {
   font-family: "Jost", "sans serif";
 }
