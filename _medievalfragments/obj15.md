@@ -1,7 +1,6 @@
 ---
 pid: obj15
-label: 'AM [aman. frag.] [Divina commedia. Purgatorio: Canto XXXI lines 45-145; Canto
-  XXXII lines 1-90] (Manuscript fragment from Dante, Divine Comedy)'
+label: 'AM [aman. frag.] (Manuscript fragment from Dante, Divine Comedy)'
 agent: Unknown
 location: Ferrara, Italy
 longitude: '11.619787'
