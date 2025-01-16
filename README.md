@@ -5,6 +5,7 @@ Each include, layout, and folder includes a doc entitled "doc.md" that provides 
 
 Before using WaxBuilder, I suggest you familiarise yourself with Wax, including the Wax documentation. You may need the supplemental documentation for Wax, available from Cornell University's Digital CoLab (insha'Allah, coming soon) to help you, since Wax's documentation is scant.
 
+## Demo
 You can see the demo site for WaxBuilder, [Medieval Fragments at Cornell](https://kam535.github.io/medieval-fragments/).
 
 <img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell">
