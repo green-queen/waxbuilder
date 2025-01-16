@@ -7,9 +7,7 @@
 # syntax errors in this file:
 # ~> https://learnxinyminutes.com/docs/yaml/
 #
-#
-# Questions ?
-# ~> https://minicomp.github.io/wiki/#/
+
 #
 # ---------------------------------------------------------------
 # MAIN SETTINGS
@@ -17,14 +15,14 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Medieval Fragments at Cornell'
+title:            'WaxBuilder'
 description:      'A minimal collections exhibit platform'
-url:              'https://kam535.github.io'
-baseurl:          '/waxbuilder'
+url:              'https://kam535.github.io' #CHANGE THIS
+baseurl:          '/waxbuilder' #CHANGE THIS
 copyright:        'Cornell University Digital CoLab, 2024'
 logo:             '/img/book.png'
 default_thumb:    '/img/default.png'
-metadata: 'medievalfragments'
+metadata: 'medievalfragments' #CHANGE THIS; exclude the file extension, i.e. .csv
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
@@ -56,17 +54,18 @@ kramdown:
 # Jekyll while others are Wax-specific.
 # For more info, refer to:
 # ~> https://jekyllrb.com/docs/collections/
+# YOU MUST CHANGE medievalfragments, medfrag_item, and raw_images/medfragments TO YOUR OWN COLLECTION FILES TO MAKE THE SITE WORK!
 
 collections:
   exhibits:
     output: true
-  medievalfragments: # name of collection
+  medievalfragments: # name of collection; CHANGE THIS
     output: true # makes sure pages are output as html files
-    layout: 'medfrag_item' # the layout for the pages to use
+    layout: 'medfrag_item' # the layout for the pages to use; CHANGE THIS
     metadata:
-      source: 'medievalfragments.csv' # path to the metadata file within `_data`
+      source: 'medievalfragments.csv' # path to the metadata file within `_data`; CHANGE THIS
     images:
-      source: 'raw_images/medfragments' # path to the directory of images within `_data`
+      source: 'raw_images/medfragments' # path to the directory of images within `_data`; CHANGE THIS
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
