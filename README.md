@@ -7,7 +7,6 @@ Before using WaxBuilder, I suggest you familiarise yourself with Wax, including 
 
 ## Demo
 You can see the demo site for WaxBuilder, [Medieval Fragments at Cornell](https://kam535.github.io/medieval-fragments/).
-
 <img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell"/>
 
 ## Getting Started
