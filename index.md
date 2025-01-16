@@ -3,7 +3,7 @@ layout: page
 show_title: false
 banner:
   collection: medievalfragments
-  pid: obj20
+  pid: obj24
   y: 25%
   clickable: yes
   height: '500px'
