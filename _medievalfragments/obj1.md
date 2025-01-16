@@ -1,7 +1,6 @@
 ---
 pid: obj1
-label: Fragment in Greek from the Gospel of Matthew 21:1-19 describing the entrance
-  of Jesus into Jerusalem (front)
+label: Fragment in Greek from the Gospel of Matthew (front)
 agent: Unknown
 location: Ithaca, NY
 longitude: "-76.501884"
