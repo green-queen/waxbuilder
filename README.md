@@ -9,21 +9,24 @@ You can see the demo site for WaxBuilder, [Medieval Fragments at Cornell](https:
 
 <img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell">
 
+## Getting Started
+Generally, you can get started with WaxBuilder by following the [extended Wax documentation](https://kam535.github.io/wax-documentation/). Some aspects, like the map, data download, tag, and timeline pages, will not have documentation here. However, WaxBuilder's files include comments guiding you through how to use them. Just follow the comments and reach out with any questions.
 
-## _data
+## File Breakdown
+### _data
 The data folder contains your most essential files, including the:
   - Raw images
   - Config files for the map (config-map.csv and config-theme-colors.csv)
   - Your uploaded metadata csv
   - theme.yml file (which includes settings for the map)
 
-## _exhibits
+### _exhibits
 The exhibits folder contains the Markdown files that contain your exhibits. See the Wax Documentation for details. This is a native Wax feature.
 
-## _includes
+### _includes
 This folder includes all of the includes for layouts and features across the site. This folder includes the head, header, and footer elements, as well as various viewers and the tag carousel. For information on how to use an include, see the docs.md file in the _includes folder.
 
-## _layouts
+### _layouts
 This folder includes all of the page layouts for the site, including:
   - default.html: the default layout
   - event.html: the layout for an individual event in the timeline
@@ -37,28 +40,28 @@ This folder includes all of the page layouts for the site, including:
   - timeline.html: the layout for the timeline
   - timedefault.html: the base layout for all timeline elements
     
-## _sass
+### _sass
 This folder contains the styling elements for the site and its assets.
 
-## _assets
+### _assets
 This folder contains all scripts, images, and stylesheeets for various Javascript and HTML elements on the site.
 
-## _img
+### _img
 This folder contains all of the derivate images and some of the icons for the map.
 
-## _pages
+### _pages
 This folder contains the markdown files for all of the individual pages displayed on the site.
 
-## _search
+### _search
 This folder contains the search index.json for the file for the search page/search bar.
 
-## tags.md
+### tags.md
 This file contains the markdown that will generate pages for each tag when they're clicked on.
 
-## index.md
+### index.md
 This file contains the markdown for the main homepage content of the site.
 
-## _config.yml
+### _config.yml
 This file contains all of the settings for teh configuration of the site.
 
 All other files (Gemfiles, RAKEfiles, etc.) are essential to the functioning of Jekyll, which is the static site generator powering all Wax sites. 
