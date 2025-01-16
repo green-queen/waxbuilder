@@ -8,10 +8,10 @@ Before using WaxBuilder, I suggest you familiarise yourself with Wax, including 
 ## Demo
 You can see the demo site for WaxBuilder, [Medieval Fragments at Cornell](https://kam535.github.io/medieval-fragments/).
 
-<img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell">
+<img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell"/>
 
 ## Getting Started
-Generally, you can get started with WaxBuilder by following the [extended Wax documentation](https://kam535.github.io/wax-documentation/). Some aspects, like the map, data download, tag, and timeline pages, will not have documentation here. However, WaxBuilder's files include comments guiding you through how to use them. Just follow the comments and reach out with any questions.
+You can get started with WaxBuilder by following the [extended Wax documentation](https://kam535.github.io/wax-documentation/). Navigate to the WaxBuilder section for documentation on the map, timeline, tags, and other features not included in Wax. 
 
 ## File Breakdown
 ### _data
