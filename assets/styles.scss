@@ -10,8 +10,8 @@ $logo: url("{{ '/img/book.png' | absolute_url }}");
 
 /* text */
 
-$body-font:       'EB Garamond', 'serif';
-$heading-font:    'EB Garamond', 'serif';
+$body-font:       'Jost', 'sans serif';
+$heading-font:    'Jost', 'sans serif';
 
 
 /* Image Size */
@@ -63,5 +63,5 @@ font & asset import
         max-width:90%
     }
 }
-@import url('https://fonts.googleapis.com/css?family=EB%20Garamond:300,400,700&font-display=auto');
+@import url('https://fonts.googleapis.com/css?family=Jost:300,400,700&font-display=auto');
 @import 'wax';
