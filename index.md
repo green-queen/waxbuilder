@@ -9,16 +9,18 @@ banner:
   height: '500px'
 ---
 
-WaxBuilder is a free, open-source, static site exhibit tool blending the look and featured of [Wax](https://minicomp.github.io/wax/) and (CollectionBuilder)[https://collectionbuilder.github.io]. WaxBuilder's main sections include 
+WaxBuilder is a tool built on the shell of [Wax](https://minicomp.github.io/wax/), a minimal, static site-builder for digital collections. WaxBuilder includes added features borrowed from (CollectionBuilder)[https://collectionbuilder.github.io] and [Joseph Anderson](https://github.com/fitnycdigitalinitiatives) of the Fashion Institute of Technology NYC's Digital Initiatives, including different data download formats, a timeline, an interactive web map, subject tags, and more.
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRswm89Pl4VhxscrJfBzLwjDrCvktVllYreWg&s" class="center" alt="Cornell RMC from above">
+Each include, layout, and folder includes a doc entitled "doc.md" that provides information about how to use that folder or file to customize your site.
+
+Before using WaxBuilder, I suggest you familiarise yourself with Wax, including the Wax documentation. You may need the [supplemental documentation for Wax](https://kam535.github.io/wax-documentation/), available from Cornell University's Digital CoLab to help you, since Wax's documentation is scant. Wax Docs + will also include specific WaxBuilder documentation soon (insha'Allah).
+
+<img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" class="center" alt="Cornell RMC from above">
 <div style="text-align:center">
-<em>A bird's-eye view of Cornell's RMC</em>
+<em>The WaxBuilder demo site, Medieval Fragments at Cornell</em>
 </div>
 
 <br> 
-Some of the objects in this collection are part of the [Medieval manuscript fragments archival collection](https://digital.library.cornell.edu/catalog?f%5Barchival_collection_tesim%5D%5B%5D=Medieval+manuscript+fragments&search_field=all_fields) that has been digitized and is publicly available online.
-
 ### Browse the Collection
 
 #### By Item Type
