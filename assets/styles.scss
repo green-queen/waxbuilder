@@ -10,8 +10,8 @@ $logo: url("{{ '/img/book.png' | absolute_url }}");
 
 /* text */
 
-$body-font:       'Trirong', 'serif';
-$heading-font:    'Trirong', 'serif';
+$body-font:       'Noto Sans', 'sans serif';
+$heading-font:    'Noto Sans', 'sans serif';
 
 
 /* Image Size */
@@ -63,5 +63,5 @@ font & asset import
         max-width:90%
     }
 }
-@import url('https://fonts.googleapis.com/css?family=Trirong:300,400,700&font-display=auto');
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans:300,400,700&font-display=auto');
 @import 'wax';
