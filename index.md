@@ -1,3 +1,4 @@
+<!-- THIS IS YOUR HOME PAGE / FRONT PAGE -->
 ---
 layout: page
 show_title: false
