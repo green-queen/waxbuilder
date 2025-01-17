@@ -107,9 +107,9 @@
         /* bind feature for search */
         feature.layer = layer;{% endif %}
         /* calculate item link */
-        var itemHref = 'https://kam535.github.io/waxbuilder' + feature.properties.link;
+        var itemHref = {{ absolute url | append: feature.properties.link }}
         /* find object thumb based on format */
-        var thumbSrc = 'https://kam535.github.io/waxbuilder' + feature.properties.filename;
+        var thumbSrc = {{ absolute url | append: feature.properties.filename }}
         /* create popup content */
         var popupTemplate = '<h2 class="h4"><a class="text-dark" href="' + itemHref + '">' +
             feature.properties.title + '</a></h2><div class="text-center"><a href="' + itemHref + 
