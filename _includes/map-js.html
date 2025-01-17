@@ -107,9 +107,9 @@
         /* bind feature for search */
         feature.layer = layer;{% endif %}
         /* calculate item link */
-        var itemHref = {{ absolute url | append: feature.properties.link }}
+        var itemHref = "{{ feature.properties.link | relative_url }}"
         /* find object thumb based on format */
-        var thumbSrc = {{ absolute url | append: feature.properties.filename }}
+        var thumbSrc = "{{ feature.properties.filename | relative_url }}"
         /* create popup content */
         var popupTemplate = '<h2 class="h4"><a class="text-dark" href="' + itemHref + '">' +
             feature.properties.title + '</a></h2><div class="text-center"><a href="' + itemHref + 
