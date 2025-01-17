@@ -11,7 +11,7 @@ originalwork: Qur’an
 repository: Library of Congress
 format: audio
 order: '23'
-layout: medfrag_av
+layout: medfrag_item
 collection: medievalfragments
 thumbnail: "/img/derivatives/iiif/images/obj24/full/250,/0/default.jpg"
 full: "/img/derivatives/iiif/images/obj24/full/1140,/0/default.jpg"
