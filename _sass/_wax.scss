@@ -373,6 +373,13 @@ item pages (iiif + metadata)
   padding: $less-margin;
 }
 
+
+.av-block {
+  max-width: 100%;
+  border: $neutral 1px solid;
+  border-radius: 3px;
+  padding: $less-margin;
+}
 /*
 
 search box
