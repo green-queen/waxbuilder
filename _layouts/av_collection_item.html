@@ -12,7 +12,7 @@ layout: default
   }
 </style>
   <div class='item-view'>
-    <div class = "div1">
+    <dl class = "div1">
     <span class='pagination-link' id='prevlink'></span>
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
       <clover-viewer 
@@ -21,7 +21,7 @@ layout: default
       </clover-viewer>
     <span class='pagination-link' id='nextlink'></span>
   </div>
-  </div>
+  </dl>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 
 {% comment %}
