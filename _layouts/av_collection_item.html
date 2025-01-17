@@ -8,11 +8,11 @@ layout: default
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
 <style>
   .div1 {
-  width: 800px;
+  width: 600px;
   }
 </style>
   <div class='item-view'>
-    <dl class = "div1">
+    <div class = "div1">
     <span class='pagination-link' id='prevlink'></span>
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
       <clover-viewer 
@@ -21,7 +21,7 @@ layout: default
       </clover-viewer>
     <span class='pagination-link' id='nextlink'></span>
   </div>
-  </dl>
+  </div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 
 {% comment %}
