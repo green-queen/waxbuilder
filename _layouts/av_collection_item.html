@@ -9,9 +9,8 @@ layout: default
   <div class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
-      cloverlink = {{ relative_url }}
       <clover-viewer 
-        id= {{ cloverlink }}
+        id= {{ page.manifest }}
         >
       </clover-viewer>
     <span class='pagination-link' id='nextlink'></span>
