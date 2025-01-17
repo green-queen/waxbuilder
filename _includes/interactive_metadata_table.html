@@ -29,9 +29,9 @@
           extend: 'collection',
           text: 'Download Data',
           buttons: ['csvHtml5',{text: 'JSON', action: function ( e, dt, button, config ) {window.location = "{{ 'assets/metadata.json' | absolute_url }}";}},
-                    {text: 'Facets JSON', action: function ( e, dt, button, config ) {window.location = 'https://kam535.github.io/waxbuilder/assets/facets.json';}},
-                    {text: 'Map (GeoJSON)', action: function ( e, dt, button, config ) {window.location = 'https://kam535.github.io/waxbuilder/assets/geodata.json';}},
-                    {text: 'Timeline (JSON)', action: function ( e, dt, button, config ) {window.location = 'https://kam535.github.io/waxbuilder/assets/timelinejs.json';}},
+                    {text: 'Facets JSON', action: function ( e, dt, button, config ) {window.location = "{{ 'assets/facets.json' | absolute_url }}";}},
+                    {text: 'Map (GeoJSON)', action: function ( e, dt, button, config ) {window.location = "{{ 'assets/geodata.json' | absolute_url }}";}},
+                    {text: 'Timeline (JSON)', action: function ( e, dt, button, config ) {window.location = "{{ 'assets/timelinejs.json' | absolute_url }}";}},
                     {text: 'Source Code', action: function ( e, dt, button, config ) {window.location = 'https://github.com/kam535/waxbuilder';}}]
         }
       ]
