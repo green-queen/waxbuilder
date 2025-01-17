@@ -6,6 +6,7 @@ layout: default
   The block below controls the image viewer
 {% endcomment %}
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+<div class='box' width="100px">
   <div class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
@@ -15,6 +16,7 @@ layout: default
       </clover-viewer>
     <span class='pagination-link' id='nextlink'></span>
   </div>
+</div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 
 {% comment %}
