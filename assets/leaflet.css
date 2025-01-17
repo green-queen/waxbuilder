@@ -351,12 +351,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-radius: 5px;
 	}
 .leaflet-control-layers-toggle {
-	background-image: url('https://kam535.github.io/waxbuilder/img/layers.png');
+	background-image: url("{{ '/img/layers.png' | relative_url }}");
 	width: 36px;
 	height: 36px;
 	}
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url('https://kam535.github.io/waxbuilder/img/layers-2x.png');
+	background-image: url("{{ 'img/layers-2x.png' | relative_url }}");
 	background-size: 26px 26px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
