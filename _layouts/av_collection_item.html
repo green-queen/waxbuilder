@@ -6,17 +6,9 @@ layout: default
   The block below controls the image viewer
 {% endcomment %}
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
-<style>
-  .clover {
-  width: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-</style>
   <div id="cloveriiif" class='item-view'>
   <span class='pagination-link' id='prevlink'></span>
-    <div class = "clover">
+    <div class = "av-block">
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
       <clover-viewer 
         id= {{ page.manifest }}
