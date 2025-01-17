@@ -375,11 +375,11 @@ item pages (iiif + metadata)
 
 
 .av-block {
-  max-width: 100%;
-  border: $neutral 1px solid;
-  border-radius: 3px;
-  padding: $less-margin;
-}
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
 /*
 
 search box
