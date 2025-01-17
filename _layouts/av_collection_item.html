@@ -8,7 +8,7 @@ layout: default
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
 <style>
   .clover {
-  width: 800px;
+  width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -16,13 +16,13 @@ layout: default
 </style>
   <div id="cloveriiif" class='item-view'>
   <span class='pagination-link' id='prevlink'></span>
-    <div class = "av-block">
+    <div class = "clover">
       <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
       <clover-viewer 
         id= {{ page.manifest }}
         >
       </clover-viewer>
-    <div class = "div1">
+    </div>
   <span class='pagination-link' id='nextlink'></span>
   </div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
