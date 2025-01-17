@@ -4,19 +4,19 @@
   "type": "Manifest",
   "label": {
     "en": [
-      "Lisa Fagin Davis: Old Books, New Technologies – Medieval Manuscript Fragments and IIIF"
+      "The Medieval Mind"
     ]
   },
   "items": [
     {
       "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
       "type": "Canvas",
-      "height": 1000,
-      "width": 1000,
+      "height": 360,
+      "width": 640,
       "duration": 1557.084,
       "label": {
         "en": [
-          "Untitled YouTube canvas"
+          "the medieval mind"
         ]
       },
       "items": [
@@ -32,17 +32,13 @@
               "body": {
                 "id": "https://ia801309.us.archive.org/26/items/themedievalmind/themedievalmind%2Fthemedievalmind.mp4",
                 "type": "Video",
-                "height": 1000,
-                "width": 1000,
+                "height": 360,
+                "width": 640,
                 "duration": 1557.084,
-                  {
-                    "id": "https://ia801309.us.archive.org/26/items/themedievalmind/themedievalmind%2Fthemedievalmind.mp4",
-                    "profile": "https://www.youtube.com"
                   }
                }
-            }
-          ]
-        }
+             ]
+          }
       ]
     }
   ]
