@@ -107,7 +107,7 @@
         /* bind feature for search */
         feature.layer = layer;{% endif %}
         /* calculate item link */
-        var itemHref = "{{ feature.properties.link | absolute_url }}"
+        var itemHref = {{ 'https://kam535.github.io/waxbuilder/' + feature.properties.link }}
         /* find object thumb based on format */
         var thumbSrc = "{{ feature.properties.filename | absolute_url }}"
         /* create popup content */
