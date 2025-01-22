@@ -15,3 +15,6 @@ This site's collection comprises a set of objects, each of which is represented 
 
 ## Locations
 {% include tag-carousel.html fields="location" %}
+
+## Test
+{% include feature/video.html pid="obj25" %}
