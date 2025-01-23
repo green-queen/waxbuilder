@@ -16,7 +16,11 @@ layout: default
     </div>
     {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 {% elsif page.format == "video" %}
-  {% include video.html pid="obj25" %}
+    <span class='pagination-link' id='prevlink'></span>
+      <div class = "av-block">
+       {% include video.html pid="obj25" %}
+      </div>
+    <span class='pagination-link' id='nextlink'></span>
 {% endif %}
 
 {% if layout.meta.size %}
