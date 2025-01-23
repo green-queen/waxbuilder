@@ -30,7 +30,7 @@
             {%- if video_src contains "vimeo" or video_src contains "youtu" -%}
             <iframe title="embedded video {{ video_caption | escape }}" src="{{ video_src }}" allowfullscreen></iframe>
             {% else %}
-            <video width="320" height="240" controls>
+            <video width="600" height="240" controls>
                 <source src="{{ video_src }}">
                 Your browser does not support the video tag.
             </video>
