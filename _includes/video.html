@@ -1,27 +1,3 @@
-{% comment %}
-    
-    Video embed from an item's pid or external link.
-    This include adds a video embed to the page using Bootstrap ratio styles, https://getbootstrap.com/docs/5.1/helpers/ratio/
-
-    E.G. --> {% include feature/video.html pid="demo_003" %}
-
-    It requires an "pid" with the include, which is used to find the video details. Alternatively, a URL to an external video can be used in "pid".
-    YouTube and Vimeo items will use iframe embeds, video files use html video element.
-
-    Options: 
-    - "pid" = several options below (required)
-        1. an pid of a video item in this collection (usually that has an youtubeid or vimeoid), e.g. "demo_003"
-        2. a full URL to a video hosted on YouTube, e.g. https://youtu.be/dbKNr3wuiuQ
-        3. a full URL to a video hosted on Vimeo, e.g. https://vimeo.com/464555587 
-        4. a full URL to an external video file, e.g. "https://www.lib.uidaho.edu/digital/videos/fluffyclouds.mp4"
-        5. a relative link to a video file stored in this repository (that is not included in the collection), i.e. "/assets/videos/cloudyskies.mp4"  
-    - "caption" = by default the figure include automatically adds the title of the item from your metadata. The caption option allows you to manually add a different caption, or give the value false for none. (optional)
-    - "width" = will use responsive sizing to set the % size on desktop (will be 100% on mobile), choose from "25", "50", "75", or "100" (optional)
-    - "ratio" = use Bootstrap embed ratio options "21x9", "16x9", "4x3", or "1x1" to customize the responsive aspect ratio. 16by9 is default. (optional)
-
-    Note: if you have issues make sure the item is a video item and a web friendly format
-
-{%- endcomment -%}
 {%- if include.pid contains '/' -%}
     {% capture video_caption %}{{ include.caption }}{% endcapture %}
     {% if include.pid contains 'vimeo' %}
