@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-
-{% comment %}
-  The block below controls the image viewer
-{% endcomment %}
+{% if item.format == "audio" %}
 <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
   <div id="cloveriiif" class='item-view'>
   <span class='pagination-link' id='prevlink'></span>
@@ -18,10 +15,9 @@ layout: default
   <span class='pagination-link' id='nextlink'></span>
   </div>
   {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
-
-{% comment %}
-  The block below controls the item metadata table
-{% endcomment %}
+{% elseif page.format == "video" %}
+{% include video.html pidid="item.pid" width="75" %}
+{% endif %}
 
 {% if layout.meta.size %}
   {% assign metadata = layout.meta %}
