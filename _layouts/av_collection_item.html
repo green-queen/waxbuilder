@@ -15,7 +15,7 @@ layout: default
     <span class='pagination-link' id='nextlink'></span>
     </div>
     {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
-{% elseif page.format == "video" %}
+{% elsif page.format == "video" %}
   {% include video.html pidid="item.pid" width="75" %}
 {% endif %}
 
