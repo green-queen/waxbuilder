@@ -21,7 +21,7 @@
     {% assign youtube_id = item.youtubeid %}
     {% capture video_src %}https://www.youtube-nocookie.com/embed/{{ youtube_id }}?rel=0&modestbranding=1{% endcapture %}
     {% else %}
-    {%- capture video_src -%}{% if  item.filename contains '/' %}{{ item.filename | relative_url }}{% else %}{{ '/objects/' | append: item.filename | relative_url }}{% endif %}{% endcapture %}
+    {%- capture video_src -%}{% if  item.filename contains '/' %}{{ item.filename | relative_url }}{% else %}{{ item.filename | relative_url }}{% endif %}{% endcapture %}
     {% endif %}
 {%- endif -%}
 <div class="text-center my-4">
