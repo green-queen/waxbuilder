@@ -16,11 +16,14 @@ layout: default
     </div>
     {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 {% elsif page.format == "video" %}
+  <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+    <div id="cloveriiif" class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
       <div class = "av-block">
-       {% include video.html pid="obj25" width="600" %}
+       {% include video.html pid="obj25" width="600" height="300" %}
       </div>
     <span class='pagination-link' id='nextlink'></span>
+    </div>
 {% endif %}
 
 {% if layout.meta.size %}
