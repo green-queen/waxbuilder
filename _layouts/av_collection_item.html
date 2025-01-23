@@ -2,21 +2,21 @@
 layout: default
 ---
 {% if item.format == "audio" %}
-<h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
-  <div id="cloveriiif" class='item-view'>
-  <span class='pagination-link' id='prevlink'></span>
-    <div class = "av-block">
-      <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
-      <clover-viewer 
+  <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+    <div id="cloveriiif" class='item-view'>
+    <span class='pagination-link' id='prevlink'></span>
+      <div class = "av-block">
+        <script src="https://www.unpkg.com/@samvera/clover-iiif@latest/dist/web-components/index.umd.js"></script>
+        <clover-viewer 
         id= {{ page.manifest }}
         >
-      </clover-viewer>
+        </clover-viewer>
+      </div>
+    <span class='pagination-link' id='nextlink'></span>
     </div>
-  <span class='pagination-link' id='nextlink'></span>
-  </div>
-  {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
+    {% unless layout.pagination == false %}{% include item_pagination.html %}{% endunless %}
 {% elseif page.format == "video" %}
-{% include video.html pidid="item.pid" width="75" %}
+  {% include video.html pidid="item.pid" width="75" %}
 {% endif %}
 
 {% if layout.meta.size %}
