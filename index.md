@@ -8,7 +8,7 @@ banner:
   clickable: yes
   height: '500px'
 ---
-{% map-js.html %}
+{% include map-js.html %}
 WaxBuilder is a tool built on the shell of [Wax](https://minicomp.github.io/wax/), a minimal, static site-builder for digital collections. WaxBuilder includes added features borrowed from [CollectionBuilder](https://collectionbuilder.github.io) and [Joseph Anderson](https://github.com/fitnycdigitalinitiatives) of the Fashion Institute of Technology NYC's Digital Initiatives, including different data download formats, a timeline, an interactive web map, subject tags, and more.
 
 Each include, layout, and folder includes a doc entitled "doc.md" that provides information about how to use that folder or file to customize your site.
