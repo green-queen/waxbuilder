@@ -81,27 +81,6 @@
     });
 
 
-// RENDER THE MAP
-    //Using map from OpenStreetMap
-        var OpenStreetMap_BlackAndWhite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
-    });
-        var map = L.map('map', {
-            layers: [OpenStreetMap_BlackAndWhite]
-        });
-
-    // Initial zoom and center in the map
-        map.setView(geoCenter, zoomLevel);
-
-    // Set markers & clusters on the map
-        var something_markers = initialMarkerClusters();
-
-    // Get the initial Markers
-        renderPinsFromURL(something_markers, geoJsonURL);
-
-
-
-
 // Functions to be used above
     // Implement the customized Icon
         function customizeMarker(){
