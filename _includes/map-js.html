@@ -15,7 +15,7 @@
 <script src="{{ '/assets/leaflet.fusesearch.js' | relative_url }}"></script>
 <script src="{{ '/assets/leaflet.markercluster.js' | relative_url }}"></script>
 <script src="{{ '/assets/leaflet.markercluster.freezable.js' | relative_url }}"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
  <link rel="stylesheet" href="jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -110,6 +110,7 @@
         {% if site.data.map-settings.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} 
     });{% endif %}
 
+ 
 // Slider
     $( function() {
         // config opaque slider
@@ -166,7 +167,14 @@
             );
     });
 
-    
+
+
+
+
+
+
+
+ 
     /* function to create object popups */
     function objectPopups(feature, layer) {
         {% if site.data.map-settings.map-search == true %}
