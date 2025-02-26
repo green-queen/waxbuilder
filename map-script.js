@@ -1,6 +1,6 @@
 // Set the parameters
     // The Geojson data you have in your folder
-        const geoJsonURL = geodata;
+        const geoJsonURL = "/waxbuilder/assets/geodata.json";
 
     // Initial center of the map in terms of longitude and latitude
         const geoCenter = [42.15, -83.7436];
