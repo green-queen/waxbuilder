@@ -181,9 +181,12 @@
     }
 
 })();
+
+ 
     // Start and End year of the dataset
         const baseStartYear = 1800;
         const baseEndYear = 2019;
+        const geoJsonURL ="https://kam535.github.io/waxbuilder/assets/geodata.json";
  
 // Slider
     $( function() {
@@ -224,8 +227,8 @@
 
                         $( "#amount" ).val( startYear + " - " + endYear );
 
-                        $.getJSON(geodata, function(data){
-                            let GEOJSON  = data;
+                         $.getJSON(geoJsonURL, function(data){
+                            let GEOJSON  = geodata;
                             for (let i = 0; i < GEOJSON["features"].length; i++){
                                 if (GEOJSON["features"][i]["properties"]["date"] >= startYear && GEOJSON["features"][i]["properties"]["date"] <= endYear) {  // will change "id" to "year"
                                     newGeoJson["features"].push(GEOJSON["features"][i])
