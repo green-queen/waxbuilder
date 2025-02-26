@@ -208,7 +208,29 @@
         // initial display
             $( "#opacity" ).val("1");
 
+     // render pins from json
+        function renderPinsFromJson(markers, geoJson){
+                   var geojson = L.geoJson(
+                                       geoJson,
+                                       {   // Information shown in tooltip
+                                               onEachFeature: function(feature,layer){
+                                                   layer.bindPopup(
+                                                       "<b>Work: </b>" + feature.properties.title + "<br>" +
+                                                       "<b>Author: </b>" + feature.properties.creator + "<br>" +
+                                                       "<b>Date: </b>" + feature.properties.date + "<br>" +
+                                                       "<b>Subject: </b>" + feature.properties.subject
+                                                   );
+                                               },
+                                           pointToLayer: function (feature, latlng) {
+                                               return L.marker(latlng, {icon});
+                                           }
+                                   });
+                   markers.clearLayers();
+                   markers.addLayer(geojson);
+                   map.addLayer(markers);
+               };
 
+     
         // config time range slider
             $( "#slider-range" ).slider({
                 range: true,
@@ -234,7 +256,7 @@
                                     newGeoJson["features"].push(GEOJSON["features"][i])
                                 }
                             }
-                            render(markers,newGeoJson);
+                            renderPinsfromJson(markers,newGeoJson);
                         });
                     }
             });
