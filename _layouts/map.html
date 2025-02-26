@@ -27,7 +27,25 @@
     {% endif %}
     <div id='wax-main'>
       <div id='wax-content' class='wax-inline-container'>
-        <div id="map"></div>
+          <div class="sliderDiv" >
+        <p>
+            <label for="amount">Time range for Something:</label>
+            <input class="sliderValue" type="text" id="amount" >
+        </p>
+        <div id="slider-range"></div>
+    </div>
+
+    <hr>
+
+    <!-- Title -->
+    <h1>Indigenous artworks in major American art collections
+    <h3>1800 - 2024</h3>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- Manipulate the MAP -->
+    <script type='text/javascript' src='script.js'></script>
       </div>
     </div>
     {% include map-js.html %}
