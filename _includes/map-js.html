@@ -5,6 +5,10 @@
 {%- assign items = items | where_exp: 'item', 'item.pid != nil' | where_exp: 'item','item.latitude' -%}
 {%- assign fields = site.data.config-map -%}
 <!-- load leaflet dependencies -->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
 <script src="{{ '/assets/leaflet.js' | relative_url }}"></script>
 <script src="{{ '/assets/Leaflet.fullscreen.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/fuse.min.js' | relative_url }}"></script>
@@ -12,10 +16,10 @@
 <script src="{{ '/assets/leaflet.markercluster.js' | relative_url }}"></script>
 <script src="{{ '/assets/leaflet.markercluster.freezable.js' | relative_url }}"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
 
+ <link rel="stylesheet" href="jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="jquery-ui.js"></script>
 
 <script>
 (function(){
