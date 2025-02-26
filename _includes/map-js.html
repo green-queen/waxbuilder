@@ -258,7 +258,7 @@
             return new L.DivIcon({ html: '<div><span class="visually-hidden">' + csize +' cluster of </span><span>' + childCount + '</span><span class="visually-hidden"> items</span></div>', className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
         }
         {% if site.data.map-settings.map-search == true %}, removeOutsideVisibleBounds: false{% endif %} 
-    });{% endif %}
+    });
                         var newGeoJson = {
                             "type" : "Feature Collection",
                             "features": []
