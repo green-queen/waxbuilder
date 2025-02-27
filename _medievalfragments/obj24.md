@@ -9,7 +9,7 @@ dateEnd: '1400'
 tTags: Illuminated Islamic manuscripts
 originalwork: Qur’an
 repository: Library of Congress
-format: audio
+format: iiif-audio
 order: '23'
 layout: medfrag_av
 collection: medievalfragments
