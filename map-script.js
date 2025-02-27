@@ -80,6 +80,11 @@
             );
     });
 
+// Set markers & clusters on the map
+        var something_markers = initialMarkerClusters();
+
+    // Get the initial Markers
+        renderPinsFromURL(something_markers, geoJsonURL);
 
 // Functions to be used above
     // Implement the customized Icon
