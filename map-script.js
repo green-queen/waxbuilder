@@ -1,6 +1,6 @@
 // Set the parameters
     // The Geojson data you have in your folder
-        const geoJsonURL = "/waxbuilder/assets/geodata.json";
+        const geoJsonURL = "/waxbuilder/assets/geojson.js";
 
     // Initial center of the map in terms of longitude and latitude
         const geoCenter = [42.15, -83.7436];
@@ -10,15 +10,13 @@
 
     // Start and End year of the dataset
         const baseStartYear = 1800;
-        const baseEndYear = 2019;
+        const baseEndYear = 2024;
 
     //Markers & Clusters
         // The color of the markers, used in function customizeMarker()
-            const markColor = '#4E91BE';
+            const markColor = '#E37620';
         // Determine the threshold of distance that cluster multiple markers, used in Function initialMarkerClusters()
             const maxClusterRadius = 100;
-        // Specify the color of the marker cluster in css under the class name, used in Function initialMarkerClusters()
-            const clusterColorClass = 'marker-cluster-color';
 
     // Check line 170-174 to customize the information on tooltip for your data
 
@@ -70,7 +68,7 @@
                                     newGeoJson["features"].push(GEOJSON["features"][i])
                                 }
                             }
-                            renderPinsFromJson(markers,newGeoJson);
+                            renderPinsFromJson(something_markers,newGeoJson);
                         });
                     }
             });
@@ -80,11 +78,27 @@
             );
     });
 
-// Set markers & clusters on the map
+
+// RENDER THE MAP
+    //Using map from OpenStreetMap
+        var OpenStreetMap_BlackAndWhite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+    });
+        var map = L.map('map', {
+            layers: [OpenStreetMap_BlackAndWhite]
+        });
+
+    // Initial zoom and center in the map
+        map.setView(geoCenter, zoomLevel);
+
+    // Set markers & clusters on the map
         var something_markers = initialMarkerClusters();
 
     // Get the initial Markers
         renderPinsFromURL(something_markers, geoJsonURL);
+
+
+
 
 // Functions to be used above
     // Implement the customized Icon
@@ -121,14 +135,11 @@
                                     maxClusterRadius: `${maxClusterRadius}`,
                                     singleMarkerMode: false,
                                     iconCreateFunction: function(cluster){
-                                        count = 0;
-                                        cluster.getAllChildMarkers().forEach(function(child){
-                                            count =count + parseInt(child.feature.properties.Count);
-                                        });
+                                        var childCount = cluster.getChildCount();
                                         return L.divIcon({
                                             className:`marker-cluster ${clusterColorClass}`,
                                             iconSize: new L.Point(40,40),
-                                            html: `<div><span >` + count + '</span></div>'
+                                            html: `<div><span >` + childCount + '</span></div>'
                                         });
                                     }
                                 })
