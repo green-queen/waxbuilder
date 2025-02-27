@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% if page.format == "audio" %}
+{% if page.format == "iiif-audio" %}
   <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
     <div id="cloveriiif" class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
@@ -20,8 +20,17 @@ layout: default
     <div id="cloveriiif" class='item-view'>
     <span class='pagination-link' id='prevlink'></span>
       <div class = "av-block">
-       {% include video.html pid="obj25" width="600" height="300" %}
+       {% include video.html pid="{{ page.pid }}" width="600" height="300" %}
       </div>
+    <span class='pagination-link' id='nextlink'></span>
+    </div>
+{% elsif page.format == "audio" %}
+ <h3 alt="{{ page.label | escape }}" class='item-label'>{{ page.label }}</h3>
+    <div id="cloveriiif" class='item-view'>
+    <span class='pagination-link' id='prevlink'></span>
+       <div class = "av-block">
+         <<audio controls src="{{ page.filename }}"></audio>
+         </div>
     <span class='pagination-link' id='nextlink'></span>
     </div>
 {% endif %}
