@@ -70,7 +70,7 @@
                                     newGeoJson["features"].push(GEOJSON["features"][i])
                                 }
                             }
-                            renderPinsFromJson(something_markers,newGeoJson);
+                            renderPinsFromJson(markers,newGeoJson);
                         });
                     }
             });
