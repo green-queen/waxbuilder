@@ -127,7 +127,7 @@ menu:
       - label: 'Sample Exhibit Shell'
         link: '/exhibits/c/'
   - label: 'Documentation'
-    link: 'https://kam535.github.io/wax-documentation'
+    link: 'https://kam535.github.io/wax-documentation/pages/waxbuilder.html'
   - label: 'About'
     link: '/about/'
  
