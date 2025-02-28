@@ -126,6 +126,8 @@ menu:
         link: '/exhibits/b/'
       - label: 'Sample Exhibit Shell'
         link: '/exhibits/c/'
+  - label: 'Documentation'
+    link: 'https://kam535.github.io/wax-documentation'
   - label: 'About'
     link: '/about/'
  
