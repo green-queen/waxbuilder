@@ -3,7 +3,9 @@ WaxBuilder is a tool built on the shell of Wax, a minimal, static site-builder f
 
 Each include, layout, and folder includes a doc entitled "doc.md" that provides information about how to use that folder or file to customize your site.
 
-Before using WaxBuilder, I suggest you familiarise yourself with Wax, including the Wax documentation. You will need the supplemental documentation for Wax, available from Cornell University's Digital CoLab to help you, since Wax's documentation is scant.
+## Documentation
+
+Before using WaxBuilder, I suggest you familiarise yourself with Wax, including the Wax documentation. You will need the [supplemental documentation for Wax](https://kam535.github.io/wax-documentation/), available from Cornell University's Digital CoLab to help you, since Wax's documentation is scant.
 
 Note that WaxBuilder is **a work in progress**. If you have suggested changes or comments, please reach out or submit a pull request.
 
