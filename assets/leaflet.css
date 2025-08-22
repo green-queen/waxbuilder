@@ -399,7 +399,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* Default icon URLs */
 .leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
-	background-image: url('https://kam535.github.io/waxbuilder/img/marker-icon.png');
+	background-image: url('https://green-queen.github.io/waxbuilder/img/marker-icon.png');
 	}
 
 
