@@ -5,16 +5,16 @@ Each include, layout, and folder includes a doc entitled "doc.md" that provides 
 
 ## Documentation
 
-Before using WaxBuilder, I suggest you familiarise yourself with Wax, including the Wax documentation. You will need the [supplemental documentation for Wax](https://kam535.github.io/wax-documentation/), available from Cornell University's Digital CoLab to help you, since Wax's documentation is scant.
+Before using WaxBuilder, I suggest you familiarise yourself with Wax, including the Wax documentation. You will need the [supplemental documentation for Wax](https://green-queen.github.io/wax-documentation/), available from Cornell University's Digital CoLab to help you, since Wax's documentation is scant.
 
 Note that WaxBuilder is **a work in progress**. If you have suggested changes or comments, please reach out or submit a pull request.
 
 ## Demo
-You can see the demo site for WaxBuilder, [Medieval Fragments at Cornell](https://kam535.github.io/medieval-fragments/).
-<img src="https://kam535.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell"/>
+You can see the demo site for WaxBuilder, [Medieval Fragments at Cornell](https://green-queen.github.io/medieval-fragments/).
+<img src="https://green-queen.github.io/waxbuilder/img/medievalfragments.png" alt="screenshot of the demo site homepage, Medieval Fragments at Cornell"/>
 
 ## Getting Started
-You can get started with WaxBuilder by following the [extended Wax documentation](https://kam535.github.io/wax-documentation/). Navigate to the WaxBuilder section for documentation on the map, timeline, tags, and other features not included in Wax. 
+You can get started with WaxBuilder by following the [extended Wax documentation](https://green-queen.github.io/wax-documentation/). Navigate to the WaxBuilder section for documentation on the map, timeline, tags, and other features not included in Wax. 
 
 ## File Breakdown
 ### _data
