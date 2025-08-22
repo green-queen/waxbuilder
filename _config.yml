@@ -17,12 +17,12 @@
 
 title:            'WaxBuilder'
 description:      'A minimal collections exhibit platform'
-url:              'https://kam535.github.io' #CHANGE THIS
-baseurl:          '/waxbuilder' #CHANGE THIS
-copyright:        'Cornell University Digital CoLab, 2024'
+url:              'https://green-queen.github.io' 
+baseurl:          '/waxbuilder'
+copyright:        'Cornell University Digital CoLab, 2025'
 logo:             '/img/book.png'
 default_thumb:    '/img/default.png'
-metadata: 'medievalfragments' #CHANGE THIS; exclude the file extension, i.e. .csv
+metadata: 'medievalfragments'
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
