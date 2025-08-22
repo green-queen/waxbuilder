@@ -127,7 +127,7 @@ menu:
       - label: 'Sample Exhibit Shell'
         link: '/exhibits/c/'
   - label: 'Documentation'
-    link: 'https://kam535.github.io/wax-documentation/pages/waxbuilder.html'
+    link: 'https://green-queen.github.io/wax-documentation/pages/waxbuilder.html'
   - label: 'About'
     link: '/about/'
  
@@ -142,7 +142,7 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/kam535/waxbuilder'
+      link: 'https://github.com/green-queen/waxbuilder'
     - label: 'Credits'
       link: '/credits'
     - label: 'Wax Wiki'
