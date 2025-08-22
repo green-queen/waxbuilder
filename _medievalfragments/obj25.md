@@ -12,5 +12,5 @@ order: '24'
 layout: medfrag_av
 collection: medievalfragments
 thumbnail: "/img/derivatives/iiif/obj25/thumbnail.png"
-manifest: "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/manifest.json"
+manifest: "https://green-queen.github.io/waxbuilder/img/derivatives/iiif/obj25/manifest.json"
 ---
