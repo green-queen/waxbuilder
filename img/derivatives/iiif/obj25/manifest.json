@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/manifest.json",
+  "id": "https://green-queen.github.io/waxbuilder/img/derivatives/iiif/obj25/manifest.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -9,7 +9,7 @@
   },
   "items": [
     {
-      "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
+      "id": "https://green-queen.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
       "type": "Canvas",
       "height": 360,
       "width": 640,
@@ -21,14 +21,14 @@
       },
       "items": [
         {
-          "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg/annotation-page/mz8590m45w-m5v9c4mg",
+          "id": "https://green-queen.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg/annotation-page/mz8590m45w-m5v9c4mg",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg/annotation-page/mz8590m45w-m5v9c4mg/annotation/ybtiyxgd4r9-m5v9c4mg",
+              "id": "https://green-queen.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg/annotation-page/mz8590m45w-m5v9c4mg/annotation/ybtiyxgd4r9-m5v9c4mg",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://kam535.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
+              "target": "https://green-queen.github.io/waxbuilder/img/derivatives/iiif/obj25/canvas/89i6mnwn05s-m5v9c4mg",
               "body": {
                 "id": "https://ia801309.us.archive.org/26/items/themedievalmind/themedievalmind%2Fthemedievalmind.mp4",
                 "type": "Video",
